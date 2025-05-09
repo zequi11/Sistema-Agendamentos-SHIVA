@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\formloginadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formloginadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroficha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroficha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormLoginAdm.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormLoginAdm.cs",
-              "RelativeDocumentMoniker": "FormLoginAdm.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormLoginAdm.cs [Projeto]",
-              "RelativeToolTip": "FormLoginAdm.cs [Projeto]",
+              "Title": "CadastroFicha.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.Designer.cs",
+              "RelativeDocumentMoniker": "CadastroFicha.Designer.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.Designer.cs",
+              "RelativeToolTip": "CadastroFicha.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:39:42.479Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormEscolhaServico.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormEscolhaServico.cs",
-              "RelativeDocumentMoniker": "FormEscolhaServico.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormEscolhaServico.cs [Projeto]",
-              "RelativeToolTip": "FormEscolhaServico.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:39:36.953Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-05-09T19:14:41.752Z",
+              "EditorCaption": ""
             }
           ]
         }
