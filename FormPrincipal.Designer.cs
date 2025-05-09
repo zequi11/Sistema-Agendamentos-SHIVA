@@ -40,12 +40,13 @@
             fichasToolStripMenuItem = new ToolStripMenuItem();
             novaFichaToolStripMenuItem = new ToolStripMenuItem();
             visualizarFichasToolStripMenuItem = new ToolStripMenuItem();
+            cadastroProdutosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { agendamentosToolStripMenuItem, clientesToolStripMenuItem, fichasToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { agendamentosToolStripMenuItem, clientesToolStripMenuItem, fichasToolStripMenuItem, cadastroProdutosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -121,6 +122,13 @@
             visualizarFichasToolStripMenuItem.Size = new Size(159, 22);
             visualizarFichasToolStripMenuItem.Text = "Visualizar Fichas";
             // 
+            // cadastroProdutosToolStripMenuItem
+            // 
+            cadastroProdutosToolStripMenuItem.Name = "cadastroProdutosToolStripMenuItem";
+            cadastroProdutosToolStripMenuItem.Size = new Size(117, 20);
+            cadastroProdutosToolStripMenuItem.Text = "Cadastro Produtos";
+            cadastroProdutosToolStripMenuItem.Click += cadastroProdutosToolStripMenuItem_Click;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -152,5 +160,6 @@
         private ToolStripMenuItem fichasToolStripMenuItem;
         private ToolStripMenuItem novaFichaToolStripMenuItem;
         private ToolStripMenuItem visualizarFichasToolStripMenuItem;
+        private ToolStripMenuItem cadastroProdutosToolStripMenuItem;
     }
 }

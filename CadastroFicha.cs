@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+
 
 
 namespace SistemaDeAgendementos

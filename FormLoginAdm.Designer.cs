@@ -44,6 +44,7 @@
             btnLogin.TabIndex = 11;
             btnLogin.Text = "Entrar";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label3
             // 

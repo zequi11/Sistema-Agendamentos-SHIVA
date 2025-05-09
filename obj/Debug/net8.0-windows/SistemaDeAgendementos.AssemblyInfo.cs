@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaDeAgendementos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d2f92088c976f45f4e9d35f339faaebcdbff565")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1509c956a58b95c7e5b97d937579ab9432f9b23")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaDeAgendementos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaDeAgendementos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

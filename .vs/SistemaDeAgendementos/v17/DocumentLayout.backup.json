@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroficha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroficha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\formprocurarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprocurarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\formloginadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formloginadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\formloginadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formloginadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistemadeagendementos\\cadastroficha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:cadastroficha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +54,147 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CadastroFicha.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.Designer.cs",
-              "RelativeDocumentMoniker": "CadastroFicha.Designer.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.Designer.cs",
-              "RelativeToolTip": "CadastroFicha.Designer.cs",
-              "ViewState": "AgIAAG8CAAAAAAAAAAAjwHwCAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:14:19.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CadastroFicha.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.cs",
-              "RelativeDocumentMoniker": "CadastroFicha.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.cs [Projeto]",
-              "RelativeToolTip": "CadastroFicha.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:14:10.897Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "FormLoginAdm.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormLoginAdm.cs",
               "RelativeDocumentMoniker": "FormLoginAdm.cs",
               "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormLoginAdm.cs [Projeto]",
               "RelativeToolTip": "FormLoginAdm.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:39:42.479Z",
+              "WhenOpened": "2025-05-09T20:27:32.818Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormEscolhaServico.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormEscolhaServico.cs",
-              "RelativeDocumentMoniker": "FormEscolhaServico.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormEscolhaServico.cs [Projeto]",
-              "RelativeToolTip": "FormEscolhaServico.cs [Projeto]",
+              "DocumentIndex": 6,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\Conexao.cs",
+              "RelativeDocumentMoniker": "Conexao.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\Conexao.cs",
+              "RelativeToolTip": "Conexao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:39:36.953Z"
+              "WhenOpened": "2025-05-09T20:26:25.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormProcurarCliente.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormProcurarCliente.cs",
+              "RelativeDocumentMoniker": "FormProcurarCliente.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormProcurarCliente.cs",
+              "RelativeToolTip": "FormProcurarCliente.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAewBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:23:34.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastroFicha.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.cs",
+              "RelativeDocumentMoniker": "CadastroFicha.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.cs",
+              "RelativeToolTip": "CadastroFicha.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:20:31.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadastroCliente.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroCliente.cs",
+              "RelativeDocumentMoniker": "CadastroCliente.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroCliente.cs",
+              "RelativeToolTip": "CadastroCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:19:20.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormPrincipal.cs",
+              "RelativeToolTip": "FormPrincipal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:15:27.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroProdutos.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroProdutos.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroProdutos.cs [Projeto]",
+              "RelativeToolTip": "CadastroProdutos.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T19:22:33.564Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CadastroProdutos.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroProdutos.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroProdutos.cs",
+              "RelativeToolTip": "CadastroProdutos.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwDUAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T19:50:18.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormLoginAdm.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormLoginAdm.cs",
+              "RelativeDocumentMoniker": "FormLoginAdm.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormLoginAdm.cs",
+              "RelativeToolTip": "FormLoginAdm.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:27:34.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\FormPrincipal.cs [Projeto]",
+              "RelativeToolTip": "FormPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:15:12.666Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CadastroFicha.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.Designer.cs",
+              "RelativeDocumentMoniker": "CadastroFicha.Designer.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\CadastroFicha.Designer.cs",
+              "RelativeToolTip": "CadastroFicha.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T19:14:41.752Z",
+              "EditorCaption": ""
             }
           ]
         }

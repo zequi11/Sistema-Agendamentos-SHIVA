@@ -59,7 +59,7 @@ namespace SistemaDeAgendementos
                     txtUserAdmin.Focus();
                 }
 
-               
+
             }
         }
 
@@ -72,12 +72,11 @@ namespace SistemaDeAgendementos
             MessageBox.Show("Você pode tentar novamente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             loginAdm();
         }
-
-
-
     }
 }

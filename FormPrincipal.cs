@@ -39,53 +39,30 @@ namespace SistemaDeAgendementos
         {
             foreach (Form form in this.MdiChildren)
             {
-                if (form is Cadastro_Pasciente___ShivaAnanda.Form1)
+                if (form is FormFiltrarClientes)
                 {
                     form.Activate();
                     return;
                 }
             }
 
-            Cadastro_Pasciente___ShivaAnanda.Form1 formCadastroClientes = new Cadastro_Pasciente___ShivaAnanda.Form1();
-            formCadastroClientes.MdiParent = this;
-            formCadastroClientes.Show();
+            FormFiltrarClientes formFiltrarClientes = new FormFiltrarClientes();
+            formFiltrarClientes.MdiParent = this;
+            formFiltrarClientes.Show();
         }
 
-        private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is Shiva_Ananda___H.Shiva)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            Shiva_Ananda___H.Shiva shiva = new Shiva_Ananda___H.Shiva();
-            shiva.MdiParent = this;
-            shiva.Show();
-        }
-
-        private void novaFichaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is TelaFicha.Form1)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            TelaFicha.Form1 form1 = new TelaFicha.Form1();
-            form1.MdiParent = this;
-            form1.Show();
-        }
+        
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cadastroProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroProdutos cadastroProdutos = new CadastroProdutos();
+            cadastroProdutos.Show();
+            this.Hide();
         }
     }
 }
