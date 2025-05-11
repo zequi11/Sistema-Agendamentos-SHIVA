@@ -3,7 +3,7 @@
 ## 📑 Índice
 - [Descrição](#-descrição)
 - [Funcionalidades](#-funcionalidades)
-- [Fotos do sisema](#-Screensshots)
+- [Fotos do sistema](#-Screensshots)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Rodar o Projeto](#-como-rodar-o-projeto)
   - [Pré-requisitos](#-pré-requisitos)
@@ -33,9 +33,9 @@ O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clien
 
 ## Screnshots
 
-![Tela Inicial](./screenshots/Tela_login.png)
-![Cadastro de Cliente](./screenshots/Tela_cadastro_clientes.png)
-![Tela de Agendamentos](./screenshots/Tela_agendamento.png)
+![Tela Inicial](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_login.pngraw=true)
+![Cadastro de Cliente](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_cadastro_clientes.pngraw=true)
+![Tela de Agendamentos](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_agendamento.pngraw=true)
 
 ---
 
