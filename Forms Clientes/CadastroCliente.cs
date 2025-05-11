@@ -11,12 +11,12 @@ using Microsoft.Data.SqlClient;
 
 namespace SistemaDeAgendementos
 {
-    public partial class CadastroCliente: Form
+    public partial class CadastroCliente : Form
     {
         public CadastroCliente()
         {
             InitializeComponent();
-    
+
             cmbEstadoCliente.Items.Add("AC");
             cmbEstadoCliente.Items.Add("AL");
             cmbEstadoCliente.Items.Add("AP");
@@ -189,6 +189,11 @@ namespace SistemaDeAgendementos
             contatoCelular1 = null;
             contatoCelular2 = null;
             contatoTelefone1 = null;
+        }
+
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

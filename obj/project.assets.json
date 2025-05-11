@@ -1666,23 +1666,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ezequiel.ecsantos\\.nuget\\packages\\": {},
+    "C:\\Users\\cilei\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\SistemaDeAgendementos.csproj",
+      "projectUniqueName": "C:\\Users\\cilei\\SistemaDeAgendementos\\SistemaDeAgendementos.csproj",
       "projectName": "SistemaDeAgendementos",
-      "projectPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\SistemaDeAgendementos.csproj",
-      "packagesPath": "C:\\Users\\ezequiel.ecsantos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\SistemaDeAgendementos\\obj\\",
+      "projectPath": "C:\\Users\\cilei\\SistemaDeAgendementos\\SistemaDeAgendementos.csproj",
+      "packagesPath": "C:\\Users\\cilei\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cilei\\SistemaDeAgendementos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ezequiel.ecsantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cilei\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1709,7 +1709,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -1739,7 +1739,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

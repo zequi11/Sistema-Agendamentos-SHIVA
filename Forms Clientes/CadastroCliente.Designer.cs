@@ -470,6 +470,7 @@
             Name = "CadastroCliente";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroCliente";
+            Load += CadastroCliente_Load;
             gpbContatoCliente.ResumeLayout(false);
             gpbContatoCliente.PerformLayout();
             gpbEnderecoCliente.ResumeLayout(false);

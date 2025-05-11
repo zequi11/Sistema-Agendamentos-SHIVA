@@ -51,7 +51,7 @@ namespace SistemaDeAgendementos
             formFiltrarClientes.Show();
         }
 
-        
+
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
@@ -63,6 +63,14 @@ namespace SistemaDeAgendementos
             CadastroProdutos cadastroProdutos = new CadastroProdutos();
             cadastroProdutos.Show();
             this.Hide();
+        }
+
+        private void cadastrarClientesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            CadastroCliente cadastroCliente = new CadastroCliente();
+            cadastroCliente.MdiParent = this;
+            cadastroCliente.Show();
+
         }
     }
 }

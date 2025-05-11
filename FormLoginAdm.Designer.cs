@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             btnLogin = new Button();
-            label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             txtSenhaAdmin = new TextBox();
             txtUserAdmin = new TextBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // btnLogin
@@ -45,16 +45,6 @@
             btnLogin.Text = "Entrar";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16F);
-            label3.Location = new Point(190, 23);
-            label3.Name = "label3";
-            label3.Size = new Size(209, 30);
-            label3.TabIndex = 10;
-            label3.Text = "Bem-Vinda Noemia!";
             // 
             // label2
             // 
@@ -89,6 +79,16 @@
             txtUserAdmin.Size = new Size(100, 23);
             txtUserAdmin.TabIndex = 6;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 16F);
+            label3.Location = new Point(190, 23);
+            label3.Name = "label3";
+            label3.Size = new Size(209, 30);
+            label3.TabIndex = 10;
+            label3.Text = "Bem-Vinda Noemia!";
+            // 
             // FormLoginAdm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -111,10 +111,10 @@
         #endregion
 
         private Button btnLogin;
-        private Label label3;
         private Label label2;
         private Label label1;
         private TextBox txtSenhaAdmin;
         private TextBox txtUserAdmin;
+        private Label label3;
     }
 }
