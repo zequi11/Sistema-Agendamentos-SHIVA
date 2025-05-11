@@ -1,7 +1,6 @@
 # Sistema de Agendamento para Espaços Terapêuticos — SHIVA ANANDA
 
 ## 📑 Índice
-
 - [Descrição](#-descrição)
 - [Funcionalidades](#-funcionalidades)
 - [Fotos do sisema](#-Screensshots)
@@ -20,7 +19,6 @@ Este é um sistema de agendamento e gestão desenvolvido para o **Espaço Terap�
 
 O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clientes e estoque no contexto de massoterapias. Ele é voltado para uso local, de forma simples e direta, atendendo às necessidades reais de um espaço terapêutico. 
 
-> **Status do projeto:** Em desenvolvimento contínuo, com base sólida já funcional.
 
 ## ⚙️ Funcionalidades
 
@@ -29,6 +27,9 @@ O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clien
 - Cadastro, visualização e baixa de **produtos vendidos ou utilizados**
 - **Controle de estoque** com atualizações automáticas
 - Sistema projetado para **uso local** pela responsável do espaço
+
+
+> **Status do projeto:** Em desenvolvimento contínuo, com base sólida já funcional.
 
 ## Screnshots
 
