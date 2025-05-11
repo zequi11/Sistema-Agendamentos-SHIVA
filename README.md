@@ -33,9 +33,9 @@ O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clien
 
 ## Screnshots
 
-![Tela Inicial](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_login.pngraw=true)
-![Cadastro de Cliente](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_cadastro_clientes.pngraw=true)
-![Tela de Agendamentos](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_agendamento.pngraw=true)
+![Tela Inicial](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_login.png?raw=true)
+![Cadastro de Cliente](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_cadastro_clientes.png?raw=true)
+![Tela de Agendamentos](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_agendamento.png?raw=true)
 
 ---
 
