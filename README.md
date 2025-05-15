@@ -2,14 +2,14 @@
 
 ## 📑 Índice
 - [Descrição](#-descrição)
-- [Funcionalidades](#-funcionalidades)
-- [Fotos do sistema](#-Screensshots)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Funcionalidades](#-Funcionalidades)
+- [Fotos do sistema](#-Screnshots)
+- [Tecnologias Utilizadas](#-Tecnologias-Utilizadas)
 - [Como Rodar o Projeto](#-como-rodar-o-projeto)
-  - [Pré-requisitos](#-pré-requisitos)
-  - [Configuração do SQL Server](#-configuração-do-sql-server)
-  - [Criando o Banco de Dados](#-criando-o-banco-de-dados)
-  - [Rodando a Aplicação](#-rodando-a-aplicação)
+  - [Pré-requisitos](#-Pré-requisitos)
+  - [Configuração do SQL Server](#-Configuração-do-SQL-Server)
+  - [Criando o Banco de Dados](#-Criando-o-Banco-de-Dados)
+  - [Rodando a Aplicação](#-Rodando-a-Aplicação)
 
 ---
 
@@ -39,7 +39,7 @@ O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clien
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias-Utilizadas
 
 - **C#** com Windows Forms
 - **SQL Server** para banco de dados
@@ -56,7 +56,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-### 🛠️ Configuração do SQL Server
+### 🛠️ Configuração-do-SQL-Server
 
 1. Instale e configure o SQL server de acordo com suas preferências
 2. Após a instalação, abra o **SQL Server Management Studio (SSMS)**.
@@ -67,7 +67,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-### 🧱 Criando o Banco de Dados
+### 🧱 Criando-o-Banco-de-Dados
 
 1. No **SSMS**, com a conexão já aberta, clique no menu: File > Open > File...
 2. Navegue até a pasta de onde clonou o projeto, exemplo: C:\Users\NoobMaster123\SistemaDeAgendamentos\database
@@ -76,7 +76,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-### 🖥️ Rodando a Aplicação
+### 🖥️ Rodando-a-Aplicação
 
 1. Abra o projeto no **Visual Studio** (`.sln`).
 2. Verifique e ajuste a **string de conexão** no arquivo `Conexao.cs` para garantir que aponta para o SQL Server correto.
