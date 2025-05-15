@@ -1,20 +1,21 @@
 # Sistema de Agendamento para Espaços Terapêuticos — SHIVA ANANDA
 
 ## 📑 Índice
-- [Descrição](#-descrição)
-- [Funcionalidades](#-Funcionalidades)
-- [Fotos do sistema](#-Screnshots)
-- [Tecnologias Utilizadas](#-Tecnologias-Utilizadas)
-- [Como Rodar o Projeto](#-como-rodar-o-projeto)
-  - [Pré-requisitos](#-Pré-requisitos)
-  - [Configuração do SQL Server](#-Configuração-do-SQL-Server)
-  - [Criando o Banco de Dados](#-Criando-o-Banco-de-Dados)
-  - [Rodando a Aplicação](#-Rodando-a-Aplicação)
+- [Descrição](#descricao)
+- [Funcionalidades](#funcionalidades)
+- [Fotos do sistema](#screenshots)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Rodar o Projeto](#como-rodar-o-projeto)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Configuração do SQL Server](#configuração-do-sql-server)
+  - [Criando o Banco de Dados](#criando-o-banco-de-dados)
+  - [Rodando a Aplicação](#rodando-a-aplicação)
+
 
 ---
 
 
-## 📋 Descrição
+## Descrição
 Este é um sistema de agendamento e gestão desenvolvido para o **Espaço Terapêutico Shiva Ananda**, um pequeno negócio real focado em terapias integrativas. O projeto tem fins acadêmicos e também práticos, pois está sendo adotado e utilizado pela proprietária do espaço.
 
 O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clientes e estoque no contexto de massoterapias. Ele é voltado para uso local, de forma simples e direta, atendendo às necessidades reais de um espaço terapêutico. 
