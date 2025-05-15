@@ -1,9 +1,9 @@
 # Sistema de Agendamento para Espaços Terapêuticos — SHIVA ANANDA
 
 ## 📑 Índice
-- [Descrição](#descricao)
+- [Descrição](#Descrição)
 - [Funcionalidades](#funcionalidades)
-- [Fotos do sistema](#screenshots)
+- [Fotos do sistema](#Screenshots)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Rodar o Projeto](#como-rodar-o-projeto)
   - [Pré-requisitos](#pré-requisitos)
