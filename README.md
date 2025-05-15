@@ -21,7 +21,7 @@ Este é um sistema de agendamento e gestão desenvolvido para o **Espaço Terap�
 O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clientes e estoque no contexto de massoterapias. Ele é voltado para uso local, de forma simples e direta, atendendo às necessidades reais de um espaço terapêutico. 
 
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Cadastro, visualização e edição de **clientes**
 - Cadastro, visualização e edição de **fichas de anamnese**
@@ -40,14 +40,14 @@ O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clien
 
 ---
 
-## 🛠 Tecnologias-Utilizadas
+## Tecnologias-Utilizadas
 
 - **C#** com Windows Forms
 - **SQL Server** para banco de dados
 
-## 🚀 Como Rodar o Projeto
+## Como Rodar o Projeto
 
-### ⚙️ Pré-requisitos
+### Pré-requisitos
 
 Antes de começar, você precisa ter instalado em sua máquina:
 
@@ -57,7 +57,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-### 🛠️ Configuração-do-SQL-Server
+### Configuração-do-SQL-Server
 
 1. Instale e configure o SQL server de acordo com suas preferências
 2. Após a instalação, abra o **SQL Server Management Studio (SSMS)**.
@@ -68,7 +68,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-### 🧱 Criando-o-Banco-de-Dados
+### Criando-o-Banco-de-Dados
 
 1. No **SSMS**, com a conexão já aberta, clique no menu: File > Open > File...
 2. Navegue até a pasta de onde clonou o projeto, exemplo: C:\Users\NoobMaster123\SistemaDeAgendamentos\database
@@ -77,7 +77,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-### 🖥️ Rodando-a-Aplicação
+### Rodando-a-Aplicação
 
 1. Abra o projeto no **Visual Studio** (`.sln`).
 2. Verifique e ajuste a **string de conexão** no arquivo `Conexao.cs` para garantir que aponta para o SQL Server correto.
@@ -86,6 +86,6 @@ Antes de começar, você precisa ter instalado em sua máquina:
 
 ---
 
-## 🤝 Contribuições
+## Contribuições
 
 Atualmente o projeto é de uso privado e acadêmico, mas sugestões são bem-vindas por meio de *issues*. 
