@@ -32,7 +32,7 @@ O sistema foi desenvolvido para facilitar o gerenciamento de atendimentos, clien
 
 > **Status do projeto:** Em desenvolvimento contínuo, com base sólida já funcional.
 
-## Screnshots
+## Screenshots
 
 ![Tela Inicial](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_login.png?raw=true)<br><br>
 ![Cadastro de Cliente](https://github.com/zequi11/Sistema-Agendamentos-SHIVA/blob/main/Screenshots/Tela_cadastro_clientes.png?raw=true)<br><br>
