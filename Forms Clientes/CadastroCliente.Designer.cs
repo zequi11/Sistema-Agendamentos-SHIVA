@@ -101,6 +101,7 @@
             // 
             // cmbEstadoCivil
             // 
+            cmbEstadoCivil.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEstadoCivil.FormattingEnabled = true;
             cmbEstadoCivil.Location = new Point(134, 85);
             cmbEstadoCivil.Name = "cmbEstadoCivil";
@@ -469,7 +470,7 @@
             Controls.Add(gpbDadosCliente);
             Name = "CadastroCliente";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "CadastroCliente";
+            Text = "Cadastrar Cliente";
             Load += CadastroCliente_Load;
             gpbContatoCliente.ResumeLayout(false);
             gpbContatoCliente.PerformLayout();

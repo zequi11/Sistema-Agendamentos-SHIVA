@@ -34,7 +34,6 @@
             listBox1 = new ListBox();
             label3 = new Label();
             txtCpf = new MaskedTextBox();
-            label2 = new Label();
             label1 = new Label();
             btnBuscarCpf = new Button();
             txtNome = new TextBox();
@@ -96,16 +95,6 @@
             txtCpf.Size = new Size(100, 23);
             txtCpf.TabIndex = 7;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16F);
-            label2.Location = new Point(226, 27);
-            label2.Name = "label2";
-            label2.Size = new Size(168, 30);
-            label2.TabIndex = 12;
-            label2.Text = "Procurar Cliente";
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -143,13 +132,12 @@
             Controls.Add(listBox1);
             Controls.Add(label3);
             Controls.Add(txtCpf);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnBuscarCpf);
             Controls.Add(txtNome);
             Name = "FormProcurarCliente";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormProcurarCliente";
+            Text = "Escolher Cliente";
             Load += FormProcurarCliente_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -163,7 +151,6 @@
         private ListBox listBox1;
         private Label label3;
         private MaskedTextBox txtCpf;
-        private Label label2;
         private Label label1;
         private Button btnBuscarCpf;
         private TextBox txtNome;
