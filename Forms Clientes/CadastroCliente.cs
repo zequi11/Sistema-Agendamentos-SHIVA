@@ -46,7 +46,69 @@ namespace SistemaDeAgendementos
             cmbEstadoCivil.Items.AddRange(estadosCivis);
         }
 
-        private void btnCadastrarCliente_Click(object sender, EventArgs e)
+        // NOVO MÉTODO PARA VERIFICAR EXISTÊNCIA DO CPF NO BANCO
+        private bool ClienteExiste(string cpf)
+        {
+            using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+            {
+                string query = "SELECT COUNT(*) FROM Cliente WHERE cpf_cliente = @cpf";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@cpf", cpf);
+                    conn.Open();
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+
+        private bool ValidarCamposObrigatorios()
+        {
+            if (string.IsNullOrWhiteSpace(txtNomeCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtRgCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtCpfClinte.Text) ||
+                string.IsNullOrWhiteSpace(txtEndereco.Text) ||
+                string.IsNullOrWhiteSpace(txtNumeroEndereco.Text) ||
+                string.IsNullOrWhiteSpace(txtCepCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtBairroCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtCidadeCliente.Text) ||
+                cmbEstadoCliente.SelectedIndex == -1 ||
+                cmbEstadoCivil.SelectedIndex == -1 ||
+                string.IsNullOrWhiteSpace(txtNmroCelular1.Text) ||
+                string.IsNullOrWhiteSpace(txtContatoEmail.Text))
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtCpfClinte.Text, @"^\d{3}\.\d{3}\.\d{3}-\d{2}$"))
+            {
+                MessageBox.Show("CPF inválido. Use o formato 000.000.000-00.", "CPF inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtCepCliente.Text, @"^\d{5}-\d{3}$"))
+            {
+                MessageBox.Show("CEP inválido. Use o formato 00000-000.", "CEP inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtContatoEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("E-mail inválido.", "E-mail inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (dttmCliente.Value.Date > DateTime.Today)
+            {
+                MessageBox.Show("A data de nascimento não pode ser no futuro.", "Data inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void btnCadastrarCliente_Click_1(object sender, EventArgs e)
         {
             if (!ValidarCamposObrigatorios()) return;
 
@@ -128,69 +190,7 @@ namespace SistemaDeAgendementos
             }
         }
 
-        // NOVO MÉTODO PARA VERIFICAR EXISTÊNCIA DO CPF NO BANCO
-        private bool ClienteExiste(string cpf)
-        {
-            using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
-            {
-                string query = "SELECT COUNT(*) FROM Cliente WHERE cpf_cliente = @cpf";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@cpf", cpf);
-                    conn.Open();
-                    int count = (int)cmd.ExecuteScalar();
-                    return count > 0;
-                }
-            }
-        }
-
-        private bool ValidarCamposObrigatorios()
-        {
-            if (string.IsNullOrWhiteSpace(txtNomeCliente.Text) ||
-                string.IsNullOrWhiteSpace(txtRgCliente.Text) ||
-                string.IsNullOrWhiteSpace(txtCpfClinte.Text) ||
-                string.IsNullOrWhiteSpace(txtEndereco.Text) ||
-                string.IsNullOrWhiteSpace(txtNumeroEndereco.Text) ||
-                string.IsNullOrWhiteSpace(txtCepCliente.Text) ||
-                string.IsNullOrWhiteSpace(txtBairroCliente.Text) ||
-                string.IsNullOrWhiteSpace(txtCidadeCliente.Text) ||
-                cmbEstadoCliente.SelectedIndex == -1 ||
-                cmbEstadoCivil.SelectedIndex == -1 ||
-                string.IsNullOrWhiteSpace(txtNmroCelular1.Text) ||
-                string.IsNullOrWhiteSpace(txtContatoEmail.Text))
-            {
-                MessageBox.Show("Preencha todos os campos obrigatórios.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (!Regex.IsMatch(txtCpfClinte.Text, @"^\d{11}$"))
-            {
-                MessageBox.Show("CPF inválido. Digite apenas os 11 números.", "CPF inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (!Regex.IsMatch(txtCepCliente.Text, @"^\d{8}$"))
-            {
-                MessageBox.Show("CEP inválido. Digite os 8 números.", "CEP inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (!Regex.IsMatch(txtContatoEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
-            {
-                MessageBox.Show("E-mail inválido.", "E-mail inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (dttmCliente.Value.Date > DateTime.Today)
-            {
-                MessageBox.Show("A data de nascimento não pode ser no futuro.", "Data inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            return true;
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
+        private void btnLimpar_Click_1(object sender, EventArgs e)
         {
             txtNomeCliente.Clear();
             txtRgCliente.Clear();
@@ -210,10 +210,6 @@ namespace SistemaDeAgendementos
             txtContatoEmail.Clear();
             dttmCliente.Value = DateTime.Today;
             txtNomeCliente.Focus();
-        }
-
-        private void CadastroCliente_Load(object sender, EventArgs e)
-        {
         }
     }
 }

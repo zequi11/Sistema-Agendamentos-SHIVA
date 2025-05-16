@@ -283,6 +283,7 @@
             btnCadastrarCliente.TabIndex = 44;
             btnCadastrarCliente.Text = "Cadastrar";
             btnCadastrarCliente.UseVisualStyleBackColor = true;
+            btnCadastrarCliente.Click += btnCadastrarCliente_Click_1;
             // 
             // gpbContatoCliente
             // 
@@ -419,6 +420,7 @@
             btnLimpar.TabIndex = 45;
             btnLimpar.Text = "Limpar";
             btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click_1;
             // 
             // gpbDadosCliente
             // 
@@ -471,7 +473,6 @@
             Name = "CadastroCliente";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastrar Cliente";
-            Load += CadastroCliente_Load;
             gpbContatoCliente.ResumeLayout(false);
             gpbContatoCliente.PerformLayout();
             gpbEnderecoCliente.ResumeLayout(false);

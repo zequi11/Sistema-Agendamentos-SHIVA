@@ -67,10 +67,67 @@ namespace SistemaDeAgendementos
 
         private void cadastrarClientesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is CadastroCliente)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
             CadastroCliente cadastroCliente = new CadastroCliente();
             cadastroCliente.MdiParent = this;
             cadastroCliente.Show();
 
+        }
+
+        private void novoAgendamentoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FormEscolhaServico)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            FormEscolhaServico escolhaServico = new FormEscolhaServico();
+            escolhaServico.MdiParent = this;
+            escolhaServico.Show();
+        }
+
+        private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FormFiltrarClientes)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            FormFiltrarClientes formFiltrar = new FormFiltrarClientes();
+            formFiltrar.MdiParent = this;
+            formFiltrar.Show();
+        }
+
+        private void novaFichaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is CadastroFicha)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            CadastroFicha cadastroFicha = new CadastroFicha();
+            cadastroFicha.MdiParent = this;
+            cadastroFicha.Show();
         }
     }
 }
