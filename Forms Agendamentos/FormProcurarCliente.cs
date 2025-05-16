@@ -237,27 +237,19 @@ namespace SistemaDeAgendementos
 
         private void confirmarAgendamento()
         {
-            if (listBox1.SelectedItem != null)
+            if (listBox1.SelectedItem == null)
             {
-                clienteSelecionado = listBox1.SelectedItem.ToString();
-
-                DialogResult confirmacaoAgendamento = MessageBox.Show($"Confirma o agendamento da terapia {TerapiaSelecionada} para o cliente {clienteSelecionado} no dia {DataSelecionada} às {HoraSelecionada}?", "Confirmar agendamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (confirmacaoAgendamento == DialogResult.Yes)
-                {
-                    buscarIdCliente();
-                    buscarIdTerapia();
-                    inserirAgendamento();
-                }
-                else
-                {
-                    return;
-                }
-            }
-            else
-            {
-                MessageBox.Show("Selecione um cliente para prosseguir", "Cliente não selecionado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Selecione um cliente para prosseguir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+
+            clienteSelecionado = listBox1.SelectedItem.ToString();
+
+            if (MessageBox.Show($"Confirmar agendamento de {TerapiaSelecionada} para {clienteSelecionado} em {DataSelecionada} às {HoraSelecionada}?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                buscarIdCliente();
+                buscarIdTerapia();
+                inserirAgendamento();
             }
         }
 

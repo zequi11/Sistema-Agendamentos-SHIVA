@@ -32,12 +32,6 @@ namespace SistemaDeAgendementos
 
         }
 
-        private void FormEscolhaServico_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cmb = sender as ComboBox;
@@ -137,8 +131,6 @@ namespace SistemaDeAgendementos
             return true;
         }
 
-
-
         private bool VerificarProdutosMassagem()
         {
             if (string.IsNullOrEmpty(terapiaSelecionada))
@@ -202,14 +194,10 @@ namespace SistemaDeAgendementos
         }
 
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             HabilitarTodosComboBoxes();
         }
-
-
 
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
@@ -241,16 +229,20 @@ namespace SistemaDeAgendementos
                     formProcurarCliente.DescricaoConsulta = this.descricaoConsulta;
                     formProcurarCliente.TipoConsulta = this.tipoDaConsulta;
                     formProcurarCliente.Show();
-                    formProcurarCliente.Show();
                     this.Hide();
                 }
             }
 
+        }
 
-
+        private void FormEscolhaServico_Load(object sender, EventArgs e)
+        {
 
         }
 
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
 
+        }
     }
 }

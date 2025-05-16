@@ -108,6 +108,7 @@
             groupBox2.TabIndex = 23;
             groupBox2.TabStop = false;
             groupBox2.Text = "Selecionar Horário";
+            groupBox2.Enter += groupBox2_Enter;
             // 
             // label3
             // 
