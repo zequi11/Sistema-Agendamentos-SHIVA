@@ -7,17 +7,12 @@ namespace SistemaDeAgendementos
 {
     public partial class FormFiltrarClientes : Form
     {
-        private string stringConexao = "Server=localhost;Database=SistemaAgendamento;User Id=sa;Password=123456;TrustServerCertificate=True;";
-        private SqlConnection conexao;
-        private SqlDataAdapter dataAdapter;
         private DataTable dtClientes;
 
         public FormFiltrarClientes()
         {
             InitializeComponent();
-            conexao = new SqlConnection(stringConexao);
             dtClientes = new DataTable();
-            dataAdapter = new SqlDataAdapter();
         }
 
         private void FormFiltrarClientes_Load(object sender, EventArgs e)
@@ -37,9 +32,11 @@ namespace SistemaDeAgendementos
 
             try
             {
-                using (SqlCommand comando = new SqlCommand(query, conexao))
+                using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+                using (SqlCommand comando = new SqlCommand(query, conn))
+                using (SqlDataAdapter dataAdapter = new SqlDataAdapter(comando))
                 {
-                    dataAdapter.SelectCommand = comando;
+                    conn.Open();
                     dtClientes.Clear();
                     dataAdapter.Fill(dtClientes);
                     dataGridClientes.DataSource = dtClientes;
@@ -51,52 +48,94 @@ namespace SistemaDeAgendementos
             }
         }
 
-        private void btnFiltrar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string query = @"
-                    SELECT id_cliente, nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente,
-                           logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
-                           cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
-                           contato1_cliente, contato2_cliente, contatoEmergencia_cliente,
-                           status_cliente, obs_cliente
-                    FROM Cliente
-                    WHERE 1=1";
-
-                SqlCommand comando = new SqlCommand();
-                comando.Connection = conexao;
-
-                if (!string.IsNullOrWhiteSpace(txtNome.Text))
-                {
-                    query += " AND nome_cliente LIKE @nomeCliente";
-                    comando.Parameters.AddWithValue("@nomeCliente", "%" + txtNome.Text.Trim() + "%");
-                }
-
-                if (!string.IsNullOrWhiteSpace(txtcpf.Text))
-                {
-                    query += " AND cpf_cliente LIKE @cpfCliente";
-                    comando.Parameters.AddWithValue("@cpfCliente", "%" + txtcpf.Text.Trim() + "%");
-                }
-
-                comando.CommandText = query;
-
-                dataAdapter = new SqlDataAdapter(comando);
-                dtClientes = new DataTable();
-                dataAdapter.Fill(dtClientes);
-                dataGridClientes.DataSource = dtClientes;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao filtrar os dados: " + ex.Message);
-            }
-        }
-
-        private void btnLimparCampos_Click(object sender, EventArgs e)
+        private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtcpf.Clear();
             txtNome.Clear();
             CarregarDados();
         }
+
+        private void btnFiltrarNome_Click_1(object sender, EventArgs e)
+        {
+            string nomeFiltro = txtNome.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(nomeFiltro))
+            {
+                MessageBox.Show("Por favor, digite um nome para filtrar.", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNome.Focus();
+                return;
+            }
+
+            string query = @"
+                SELECT id_cliente, nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente,
+                logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
+                cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
+                contato1_cliente, contato2_cliente, contatoEmergencia_cliente,
+                status_cliente, obs_cliente
+                FROM Cliente
+                WHERE nome_cliente LIKE @nomeCliente";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+                using (SqlCommand comando = new SqlCommand(query, conn))
+                {
+                    comando.Parameters.AddWithValue("@nomeCliente", "%" + nomeFiltro + "%");
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(comando))
+                    {
+                        dtClientes = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dtClientes);
+                        dataGridClientes.DataSource = dtClientes;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao filtrar pelo nome: " + ex.Message);
+            }
+        }
+
+        private void btnFiltrarCPF_Click(object sender, EventArgs e)
+        {
+            string cpfFiltro = txtcpf.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(cpfFiltro))
+            {
+                MessageBox.Show("Por favor, digite um CPF para filtrar.", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtcpf.Focus();
+                return;
+            }
+
+            string query = @"
+                SELECT id_cliente, nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente,
+                       logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
+                       cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
+                       contato1_cliente, contato2_cliente, contatoEmergencia_cliente,
+                       status_cliente, obs_cliente
+                FROM Cliente
+                WHERE cpf_cliente = @cpfCliente";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+                using (SqlCommand comando = new SqlCommand(query, conn))
+                {
+                    comando.Parameters.AddWithValue("@cpfCliente", cpfFiltro);
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(comando))
+                    {
+                        dtClientes = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dtClientes);
+                        dataGridClientes.DataSource = dtClientes;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao filtrar pelo CPF: " + ex.Message);
+            }
+        }
+
     }
 }

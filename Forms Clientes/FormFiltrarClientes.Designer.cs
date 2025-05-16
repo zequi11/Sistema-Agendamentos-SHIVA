@@ -28,79 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtcpf = new MaskedTextBox();
-            label1 = new Label();
             dataGridClientes = new DataGridView();
-            txtNome = new TextBox();
             btnLimpar = new Button();
-            btnFiltrar = new Button();
+            btnFiltrarNome = new Button();
+            txtcpf = new TextBox();
+            txtNome = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            btnFiltrarCPF = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).BeginInit();
             SuspendLayout();
-            // 
-            // txtcpf
-            // 
-            txtcpf.Location = new Point(354, 125);
-            txtcpf.Mask = "000,000,000-00";
-            txtcpf.Name = "txtcpf";
-            txtcpf.Size = new Size(86, 23);
-            txtcpf.TabIndex = 12;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(321, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(161, 37);
-            label1.TabIndex = 11;
-            label1.Text = "HISTÓRICO\r\n";
             // 
             // dataGridClientes
             // 
             dataGridClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridClientes.Location = new Point(169, 238);
+            dataGridClientes.Location = new Point(169, 202);
             dataGridClientes.Name = "dataGridClientes";
-            dataGridClientes.Size = new Size(462, 242);
+            dataGridClientes.Size = new Size(462, 278);
             dataGridClientes.TabIndex = 10;
-            // 
-            // txtNome
-            // 
-            txtNome.Location = new Point(229, 82);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(356, 23);
-            txtNome.TabIndex = 9;
             // 
             // btnLimpar
             // 
-            btnLimpar.Location = new Point(405, 164);
+            btnLimpar.Location = new Point(361, 114);
             btnLimpar.Name = "btnLimpar";
-            btnLimpar.Size = new Size(77, 68);
+            btnLimpar.Size = new Size(77, 37);
             btnLimpar.TabIndex = 8;
             btnLimpar.Text = "&Limpar";
             btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
             // 
-            // btnFiltrar
+            // btnFiltrarNome
             // 
-            btnFiltrar.Location = new Point(321, 164);
-            btnFiltrar.Name = "btnFiltrar";
-            btnFiltrar.Size = new Size(77, 68);
-            btnFiltrar.TabIndex = 7;
-            btnFiltrar.Text = "&Filtrar";
-            btnFiltrar.UseVisualStyleBackColor = true;
+            btnFiltrarNome.Location = new Point(234, 114);
+            btnFiltrarNome.Name = "btnFiltrarNome";
+            btnFiltrarNome.Size = new Size(86, 36);
+            btnFiltrarNome.TabIndex = 7;
+            btnFiltrarNome.Text = "Filtrar Nome";
+            btnFiltrarNome.UseVisualStyleBackColor = true;
+            btnFiltrarNome.Click += btnFiltrarNome_Click_1;
+            // 
+            // txtcpf
+            // 
+            txtcpf.Location = new Point(420, 56);
+            txtcpf.Name = "txtcpf";
+            txtcpf.Size = new Size(211, 23);
+            txtcpf.TabIndex = 9;
+            // 
+            // txtNome
+            // 
+            txtNome.Location = new Point(169, 56);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(211, 23);
+            txtNome.TabIndex = 15;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(483, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 15);
+            label1.TabIndex = 16;
+            label1.Text = "Filtrar Por CPF:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(223, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(97, 15);
+            label2.TabIndex = 17;
+            label2.Text = "Filtrar Por Nome:";
+            // 
+            // btnFiltrarCPF
+            // 
+            btnFiltrarCPF.Location = new Point(483, 114);
+            btnFiltrarCPF.Name = "btnFiltrarCPF";
+            btnFiltrarCPF.Size = new Size(77, 36);
+            btnFiltrarCPF.TabIndex = 18;
+            btnFiltrarCPF.Text = "Filtrar CPF";
+            btnFiltrarCPF.UseVisualStyleBackColor = true;
+            btnFiltrarCPF.Click += btnFiltrarCPF_Click;
             // 
             // FormFiltrarClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 501);
-            Controls.Add(txtcpf);
+            Controls.Add(btnFiltrarCPF);
+            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(dataGridClientes);
             Controls.Add(txtNome);
+            Controls.Add(dataGridClientes);
+            Controls.Add(txtcpf);
             Controls.Add(btnLimpar);
-            Controls.Add(btnFiltrar);
+            Controls.Add(btnFiltrarNome);
             Name = "FormFiltrarClientes";
-            Text = "FormFiltrarClientes";
+            Text = "Procurar Clientes";
             Load += FormFiltrarClientes_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();
             ResumeLayout(false);
@@ -108,12 +131,13 @@
         }
 
         #endregion
-
-        private MaskedTextBox txtcpf;
-        private Label label1;
         private DataGridView dataGridClientes;
-        private TextBox txtNome;
         private Button btnLimpar;
-        private Button btnFiltrar;
+        private Button btnFiltrarNome;
+        private TextBox txtcpf;
+        private TextBox txtNome;
+        private Label label1;
+        private Label label2;
+        private Button btnFiltrarCPF;
     }
 }
