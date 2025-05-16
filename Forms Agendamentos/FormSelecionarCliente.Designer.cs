@@ -1,6 +1,6 @@
 ﻿namespace SistemaDeAgendementos
 {
-    partial class FormProcurarCliente
+    partial class FormSelecionarCliente
     {
         /// <summary>
         /// Required designer variable.

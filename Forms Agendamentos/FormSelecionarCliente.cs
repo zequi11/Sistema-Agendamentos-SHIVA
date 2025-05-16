@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeAgendementos
 {
-    public partial class FormProcurarCliente : Form
+    public partial class FormSelecionarCliente : Form
     {
         public string nomeClienteProcurado;
         public string cpfClienteProcurado;
@@ -29,7 +29,7 @@ namespace SistemaDeAgendementos
         public string TipoConsulta { get; set; }
 
         FormEscolhaServico formEscolhaServico;
-        public FormProcurarCliente(FormEscolhaServico formAnterior)
+        public FormSelecionarCliente(FormEscolhaServico formAnterior)
         {
             InitializeComponent();
             this.formEscolhaServico = formAnterior;

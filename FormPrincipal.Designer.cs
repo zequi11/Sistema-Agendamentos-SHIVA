@@ -72,6 +72,7 @@
             visualizarAgendamentosToolStripMenuItem.Name = "visualizarAgendamentosToolStripMenuItem";
             visualizarAgendamentosToolStripMenuItem.Size = new Size(207, 22);
             visualizarAgendamentosToolStripMenuItem.Text = "Visualizar Agendamentos";
+            visualizarAgendamentosToolStripMenuItem.Click += visualizarAgendamentosToolStripMenuItem_Click;
             // 
             // alterarAgendamentoToolStripMenuItem
             // 
@@ -89,21 +90,21 @@
             // cadastrarClientesToolStripMenuItem
             // 
             cadastrarClientesToolStripMenuItem.Name = "cadastrarClientesToolStripMenuItem";
-            cadastrarClientesToolStripMenuItem.Size = new Size(180, 22);
+            cadastrarClientesToolStripMenuItem.Size = new Size(169, 22);
             cadastrarClientesToolStripMenuItem.Text = "Cadastrar Clientes";
             cadastrarClientesToolStripMenuItem.Click += cadastrarClientesToolStripMenuItem_Click_1;
             // 
             // visualizarClientesToolStripMenuItem
             // 
             visualizarClientesToolStripMenuItem.Name = "visualizarClientesToolStripMenuItem";
-            visualizarClientesToolStripMenuItem.Size = new Size(180, 22);
+            visualizarClientesToolStripMenuItem.Size = new Size(169, 22);
             visualizarClientesToolStripMenuItem.Text = "Visualizar Clientes";
             visualizarClientesToolStripMenuItem.Click += visualizarClientesToolStripMenuItem_Click;
             // 
             // alterarClienteToolStripMenuItem
             // 
             alterarClienteToolStripMenuItem.Name = "alterarClienteToolStripMenuItem";
-            alterarClienteToolStripMenuItem.Size = new Size(180, 22);
+            alterarClienteToolStripMenuItem.Size = new Size(169, 22);
             alterarClienteToolStripMenuItem.Text = "Alterar Cliente";
             // 
             // fichasToolStripMenuItem
@@ -116,14 +117,14 @@
             // novaFichaToolStripMenuItem
             // 
             novaFichaToolStripMenuItem.Name = "novaFichaToolStripMenuItem";
-            novaFichaToolStripMenuItem.Size = new Size(180, 22);
+            novaFichaToolStripMenuItem.Size = new Size(159, 22);
             novaFichaToolStripMenuItem.Text = "Nova Ficha";
             novaFichaToolStripMenuItem.Click += novaFichaToolStripMenuItem_Click;
             // 
             // visualizarFichasToolStripMenuItem
             // 
             visualizarFichasToolStripMenuItem.Name = "visualizarFichasToolStripMenuItem";
-            visualizarFichasToolStripMenuItem.Size = new Size(180, 22);
+            visualizarFichasToolStripMenuItem.Size = new Size(159, 22);
             visualizarFichasToolStripMenuItem.Text = "Visualizar Fichas";
             // 
             // cadastroProdutosToolStripMenuItem

@@ -22,7 +22,10 @@
     <Compile Update="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Agendamentos\FormProcurarCliente.cs">
+    <Compile Update="Forms Agendamentos\FormSelecionarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms Agendamentos\FormVerAgendamentos.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

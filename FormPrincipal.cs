@@ -129,5 +129,22 @@ namespace SistemaDeAgendementos
             cadastroFicha.MdiParent = this;
             cadastroFicha.Show();
         }
+
+        private void visualizarAgendamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FormVerAgendamentos)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            FormVerAgendamentos formVerAgendamentos = new FormVerAgendamentos();
+            formVerAgendamentos.MdiParent = this;
+            formVerAgendamentos.Show();
+
+        }
     }
 }

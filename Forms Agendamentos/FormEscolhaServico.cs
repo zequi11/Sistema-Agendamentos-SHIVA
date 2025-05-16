@@ -199,7 +199,17 @@ namespace SistemaDeAgendementos
             HabilitarTodosComboBoxes();
         }
 
-        private void btnProsseguir_Click(object sender, EventArgs e)
+        private void FormEscolhaServico_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProsseguir_Click_1(object sender, EventArgs e)
         {
             bool horarioDisponivel = VerificarDisponibilidade();
             bool produtosDisponiveis = VerificarProdutosMassagem();
@@ -221,7 +231,7 @@ namespace SistemaDeAgendementos
                 {
 
 
-                    FormProcurarCliente formProcurarCliente = new FormProcurarCliente(this);
+                    FormSelecionarCliente formProcurarCliente = new FormSelecionarCliente(this);
                     formProcurarCliente.TerapiaSelecionada = this.terapiaSelecionada;
                     formProcurarCliente.DataSelecionada = this.dataSelecionada.ToString("dd/MM/yyyy");
                     formProcurarCliente.HoraSelecionada = $"{this.horaSelecionada.Hours:D2}:{this.horaSelecionada.Minutes:D2}";
@@ -232,17 +242,6 @@ namespace SistemaDeAgendementos
                     this.Hide();
                 }
             }
-
-        }
-
-        private void FormEscolhaServico_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

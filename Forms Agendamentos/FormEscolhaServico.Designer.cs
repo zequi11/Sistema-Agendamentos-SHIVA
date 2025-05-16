@@ -246,6 +246,7 @@
             btnProsseguir.TabIndex = 21;
             btnProsseguir.Text = "Prosseguir";
             btnProsseguir.UseVisualStyleBackColor = true;
+            btnProsseguir.Click += btnProsseguir_Click_1;
             // 
             // FormEscolhaServico
             // 
