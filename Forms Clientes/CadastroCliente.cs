@@ -71,6 +71,13 @@ namespace SistemaDeAgendementos
             contatoTelefone2 = txtNmroTelefone2.Text.Trim();
             contatoEmail = txtContatoEmail.Text.Trim();
 
+            // VERIFICA SE JÁ EXISTE UM CLIENTE COM O MESMO CPF
+            if (ClienteExiste(cpfCliente))
+            {
+                MessageBox.Show("Já existe um cliente cadastrado com este CPF.", "CPF Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string query = @"
                 INSERT INTO Cliente 
                 (nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente, 
@@ -118,6 +125,22 @@ namespace SistemaDeAgendementos
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao cadastrar: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // NOVO MÉTODO PARA VERIFICAR EXISTÊNCIA DO CPF NO BANCO
+        private bool ClienteExiste(string cpf)
+        {
+            using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+            {
+                string query = "SELECT COUNT(*) FROM Cliente WHERE cpf_cliente = @cpf";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@cpf", cpf);
+                    conn.Open();
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
             }
         }
 
