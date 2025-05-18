@@ -40,6 +40,7 @@ namespace SistemaDeAgendementos
 
         }
 
+
         public bool BuscarClientePorCPF(string cpf)
         {
             using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))

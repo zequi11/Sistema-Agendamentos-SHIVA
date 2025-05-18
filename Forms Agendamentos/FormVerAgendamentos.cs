@@ -18,6 +18,13 @@ namespace SistemaDeAgendementos
         private void FormVerAgendamentos_Load(object sender, EventArgs e)
         {
             CarregarTodasConsultas();
+
+            dateTimePicker1.Value = DateTime.Today;
+            dateTimePicker1.MinDate = DateTime.Today;
+            dateTimePicker1.MaxDate = DateTime.Today;
+            dateTimePicker1.ShowUpDown = true;
+            dateTimePicker1.Enabled = false;
+
         }
 
         private void CarregarTodasConsultas()

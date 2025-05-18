@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\cilei\\SistemaDeAgendementos\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms clientes\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms clientes\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,61 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormListaClientes.cs",
-              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Clientes\\FormListaClientes.cs",
-              "RelativeDocumentMoniker": "Forms Clientes\\FormListaClientes.cs",
-              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Clientes\\FormListaClientes.cs",
-              "RelativeToolTip": "Forms Clientes\\FormListaClientes.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAwwEAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:06:07.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormListaClientes.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Clientes\\FormListaClientes.cs",
-              "RelativeDocumentMoniker": "Forms Clientes\\FormListaClientes.cs",
-              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Clientes\\FormListaClientes.cs [Projeto]",
-              "RelativeToolTip": "Forms Clientes\\FormListaClientes.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:06:06.2Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs",
-              "RelativeToolTip": "FormPrincipal.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAqwKQAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:02:38.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormPrincipal.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs [Projeto]",
-              "RelativeToolTip": "FormPrincipal.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:02:36.913Z",
-              "EditorCaption": " [Projeto]"
             }
           ]
         }

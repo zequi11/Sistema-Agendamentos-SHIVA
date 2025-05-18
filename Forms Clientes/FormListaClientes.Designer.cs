@@ -136,7 +136,7 @@
             Controls.Add(btnFiltrarNome);
             Name = "FormListaClientes";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormListaClientes";
+            Text = "Selecionar Cadastro para Edição";
             Load += FormListaClientes_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();
             ResumeLayout(false);

@@ -39,6 +39,7 @@
             groupBox2 = new GroupBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             groupBox3 = new GroupBox();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dataGridConsultas).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -75,11 +76,11 @@
             // btnFiltrarSemana
             // 
             btnFiltrarSemana.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnFiltrarSemana.Location = new Point(110, 26);
+            btnFiltrarSemana.Location = new Point(242, 26);
             btnFiltrarSemana.Name = "btnFiltrarSemana";
-            btnFiltrarSemana.Size = new Size(117, 31);
+            btnFiltrarSemana.Size = new Size(95, 35);
             btnFiltrarSemana.TabIndex = 1;
-            btnFiltrarSemana.Text = "Ver Agendamentos";
+            btnFiltrarSemana.Text = "Ver Semana";
             btnFiltrarSemana.UseVisualStyleBackColor = true;
             btnFiltrarSemana.Click += btnFiltrarSemana_Click;
             // 
@@ -140,6 +141,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(dateTimePicker1);
             groupBox3.Controls.Add(btnFiltrarSemana);
             groupBox3.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox3.Location = new Point(22, 58);
@@ -148,6 +150,14 @@
             groupBox3.TabIndex = 8;
             groupBox3.TabStop = false;
             groupBox3.Text = "Agendamentos da Semana";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("Segoe UI", 9F);
+            dateTimePicker1.Location = new Point(6, 30);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(230, 23);
+            dateTimePicker1.TabIndex = 2;
             // 
             // FormVerAgendamentos
             // 
@@ -184,5 +194,6 @@
         private GroupBox groupBox2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private GroupBox groupBox3;
+        private DateTimePicker dateTimePicker1;
     }
 }

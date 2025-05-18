@@ -78,6 +78,7 @@ namespace SistemaDeAgendementos
                     MdiParent = principal,
                 };
                 editarForm.Show();
+                this.Hide();
             }
             else
             {

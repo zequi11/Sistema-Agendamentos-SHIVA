@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeAgendementos
@@ -24,40 +17,17 @@ namespace SistemaDeAgendementos
 
         private void novoAgendamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is FormEscolhaServico)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            FormEscolhaServico formescolhaServico = new FormEscolhaServico();
-            formescolhaServico.MdiParent = this;
-            formescolhaServico.Show();
-
+            AbrirOuAtivar<FormEscolhaServico>();
         }
 
         private void cadastrarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is FormFiltrarClientes)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            FormFiltrarClientes formFiltrarClientes = new FormFiltrarClientes();
-            formFiltrarClientes.MdiParent = this;
-            formFiltrarClientes.Show();
+            AbrirOuAtivar<FormFiltrarClientes>();
         }
 
         private void cadastroProdutosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Mantido igual, pois não é MDI child
             CadastroProdutos cadastroProdutos = new CadastroProdutos();
             cadastroProdutos.Show();
             this.Hide();
@@ -65,106 +35,57 @@ namespace SistemaDeAgendementos
 
         private void cadastrarClientesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is CadastroCliente)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            CadastroCliente cadastroCliente = new CadastroCliente();
-            cadastroCliente.MdiParent = this;
-            cadastroCliente.Show();
-
+            AbrirOuAtivar<CadastroCliente>();
         }
 
         private void novoAgendamentoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is FormEscolhaServico)
-                {
-                    if (form.IsDisposed) // <- se foi fechado
-                    {
-                        break; // sai do loop e vai criar novo
-                    }
-
-                    form.Activate();
-                    return;
-                }
-            }
-
-            // Se não achou ou estava fechado, cria novo:
-            FormEscolhaServico novoForm = new FormEscolhaServico();
-            novoForm.MdiParent = this;
-            novoForm.Show();
+            AbrirOuAtivar<FormEscolhaServico>();
         }
 
         private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is FormFiltrarClientes)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            FormFiltrarClientes formFiltrar = new FormFiltrarClientes();
-            formFiltrar.MdiParent = this;
-            formFiltrar.Show();
+            AbrirOuAtivar<FormFiltrarClientes>();
         }
 
         private void novaFichaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is CadastroFicha)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            CadastroFicha cadastroFicha = new CadastroFicha();
-            cadastroFicha.MdiParent = this;
-            cadastroFicha.Show();
+            AbrirOuAtivar<CadastroFicha>();
         }
 
         private void visualizarAgendamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (Form form in this.MdiChildren)
-            {
-                if (form is FormVerAgendamentos)
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-
-            FormVerAgendamentos formVerAgendamentos = new FormVerAgendamentos();
-            formVerAgendamentos.MdiParent = this;
-            formVerAgendamentos.Show();
-
+            AbrirOuAtivar<FormVerAgendamentos>();
         }
 
         private void alterarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AbrirOuAtivar<FormListaClientes>();
+        }
+
+        private void AbrirOuAtivar<T>() where T : Form, new()
+        {
+            Form formAberto = null;
+
             foreach (Form form in this.MdiChildren)
             {
-                if (form is FormListaClientes)
+                if (form is T formulario && !formulario.IsDisposed && formulario.Visible)
                 {
-                    form.Activate();
-                    return;
+                    formAberto = formulario;
+                    break;
                 }
             }
 
-            FormListaClientes formLista = new FormListaClientes();
-            formLista.MdiParent = this;
-            formLista.Show();
+            if (formAberto != null)
+            {
+                formAberto.Activate();
+            }
+            else
+            {
+                T novoForm = new T();
+                novoForm.MdiParent = this;
+                novoForm.Show();
+            }
         }
     }
 }
