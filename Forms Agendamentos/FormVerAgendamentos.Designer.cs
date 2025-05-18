@@ -72,12 +72,12 @@
             // 
             // btnFiltrarSemana
             // 
-            btnFiltrarSemana.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFiltrarSemana.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFiltrarSemana.Location = new Point(235, 58);
             btnFiltrarSemana.Name = "btnFiltrarSemana";
-            btnFiltrarSemana.Size = new Size(95, 35);
+            btnFiltrarSemana.Size = new Size(96, 43);
             btnFiltrarSemana.TabIndex = 3;
-            btnFiltrarSemana.Text = "Filtrar Semana";
+            btnFiltrarSemana.Text = "Ver Agendamentos";
             btnFiltrarSemana.UseVisualStyleBackColor = true;
             btnFiltrarSemana.Click += btnFiltrarSemana_Click;
             // 
@@ -94,6 +94,7 @@
             // 
             // btnLimparFiltros
             // 
+            btnLimparFiltros.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLimparFiltros.Location = new Point(270, 350);
             btnLimparFiltros.Name = "btnLimparFiltros";
             btnLimparFiltros.Size = new Size(95, 35);

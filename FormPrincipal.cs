@@ -88,14 +88,20 @@ namespace SistemaDeAgendementos
             {
                 if (form is FormEscolhaServico)
                 {
+                    if (form.IsDisposed) // <- se foi fechado
+                    {
+                        break; // sai do loop e vai criar novo
+                    }
+
                     form.Activate();
                     return;
                 }
             }
 
-            FormEscolhaServico escolhaServico = new FormEscolhaServico();
-            escolhaServico.MdiParent = this;
-            escolhaServico.Show();
+            // Se não achou ou estava fechado, cria novo:
+            FormEscolhaServico novoForm = new FormEscolhaServico();
+            novoForm.MdiParent = this;
+            novoForm.Show();
         }
 
         private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)

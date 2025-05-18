@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             btnVoltar = new Button();
-            button1 = new Button();
+            btnProsseguir = new Button();
             btnBuscarNome = new Button();
             listBox1 = new ListBox();
             label3 = new Label();
@@ -37,6 +37,7 @@
             label1 = new Label();
             btnBuscarCpf = new Button();
             txtNome = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // btnVoltar
@@ -48,16 +49,18 @@
             btnVoltar.TabIndex = 16;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
-            // button1
+            // btnProsseguir
             // 
-            button1.Font = new Font("Segoe UI", 11F);
-            button1.Location = new Point(12, 326);
-            button1.Name = "button1";
-            button1.Size = new Size(99, 35);
-            button1.TabIndex = 14;
-            button1.Text = "Prosseguir";
-            button1.UseVisualStyleBackColor = true;
+            btnProsseguir.Font = new Font("Segoe UI", 11F);
+            btnProsseguir.Location = new Point(12, 326);
+            btnProsseguir.Name = "btnProsseguir";
+            btnProsseguir.Size = new Size(99, 35);
+            btnProsseguir.TabIndex = 14;
+            btnProsseguir.Text = "Prosseguir";
+            btnProsseguir.UseVisualStyleBackColor = true;
+            btnProsseguir.Click += btnProsseguir_Click;
             // 
             // btnBuscarNome
             // 
@@ -67,6 +70,7 @@
             btnBuscarNome.TabIndex = 11;
             btnBuscarNome.Text = "Buscar";
             btnBuscarNome.UseVisualStyleBackColor = true;
+            btnBuscarNome.Click += btnBuscarNome_Click;
             // 
             // listBox1
             // 
@@ -113,6 +117,7 @@
             btnBuscarCpf.TabIndex = 8;
             btnBuscarCpf.Text = "Buscar";
             btnBuscarCpf.UseVisualStyleBackColor = true;
+            btnBuscarCpf.Click += btnBuscarCpf_Click;
             // 
             // txtNome
             // 
@@ -121,13 +126,24 @@
             txtNome.Size = new Size(100, 23);
             txtNome.TabIndex = 10;
             // 
-            // FormProcurarCliente
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16F);
+            label2.Location = new Point(388, 71);
+            label2.Name = "label2";
+            label2.Size = new Size(94, 30);
+            label2.TabIndex = 17;
+            label2.Text = "Clientes:";
+            // 
+            // FormSelecionarCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(609, 389);
+            Controls.Add(label2);
             Controls.Add(btnVoltar);
-            Controls.Add(button1);
+            Controls.Add(btnProsseguir);
             Controls.Add(btnBuscarNome);
             Controls.Add(listBox1);
             Controls.Add(label3);
@@ -135,7 +151,7 @@
             Controls.Add(label1);
             Controls.Add(btnBuscarCpf);
             Controls.Add(txtNome);
-            Name = "FormProcurarCliente";
+            Name = "FormSelecionarCliente";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Escolher Cliente";
             Load += FormProcurarCliente_Load;
@@ -146,7 +162,7 @@
         #endregion
 
         private Button btnVoltar;
-        private Button button1;
+        private Button btnProsseguir;
         private Button btnBuscarNome;
         private ListBox listBox1;
         private Label label3;
@@ -154,5 +170,6 @@
         private Label label1;
         private Button btnBuscarCpf;
         private TextBox txtNome;
+        private Label label2;
     }
 }

@@ -28,11 +28,11 @@ namespace SistemaDeAgendementos
         public string DescricaoConsulta { get; set; }
         public string TipoConsulta { get; set; }
 
-        FormEscolhaServico formEscolhaServico;
+        public static FormEscolhaServico formEscolhaServico;
         public FormSelecionarCliente(FormEscolhaServico formAnterior)
         {
             InitializeComponent();
-            this.formEscolhaServico = formAnterior;
+            formEscolhaServico = formAnterior;
         }
 
         private void FormProcurarCliente_Load(object sender, EventArgs e)
@@ -188,7 +188,6 @@ namespace SistemaDeAgendementos
             }
         }
 
-
         public void inserirAgendamento()
         {
             try
@@ -233,8 +232,6 @@ namespace SistemaDeAgendementos
             }
         }
 
-
-
         private void confirmarAgendamento()
         {
             if (listBox1.SelectedItem == null)
@@ -253,10 +250,7 @@ namespace SistemaDeAgendementos
             }
         }
 
-
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBuscarCpf_Click(object sender, EventArgs e)
         {
             string cpfDigitado = txtCpf.Text.Trim();
 
@@ -269,20 +263,20 @@ namespace SistemaDeAgendementos
             BuscarClientePorCPF(cpfDigitado);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnBuscarNome_Click(object sender, EventArgs e)
         {
             buscarCLienteNome();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            confirmarAgendamento();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             formEscolhaServico.Show();
             this.Hide();
+        }
+
+        private void btnProsseguir_Click(object sender, EventArgs e)
+        {
+            confirmarAgendamento();
         }
     }
 }

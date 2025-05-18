@@ -193,12 +193,6 @@ namespace SistemaDeAgendementos
             return true;
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            HabilitarTodosComboBoxes();
-        }
-
         private void FormEscolhaServico_Load(object sender, EventArgs e)
         {
 
@@ -242,6 +236,11 @@ namespace SistemaDeAgendementos
                     this.Hide();
                 }
             }
+        }
+
+        private void btnLimparOpcao_Click(object sender, EventArgs e)
+        {
+            HabilitarTodosComboBoxes();
         }
     }
 }
