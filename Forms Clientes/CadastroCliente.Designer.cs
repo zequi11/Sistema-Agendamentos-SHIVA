@@ -176,6 +176,7 @@
             // 
             // cmbEstadoCliente
             // 
+            cmbEstadoCliente.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEstadoCliente.FormattingEnabled = true;
             cmbEstadoCliente.Location = new Point(73, 80);
             cmbEstadoCliente.Name = "cmbEstadoCliente";
@@ -265,6 +266,7 @@
             lstbResumoCadastro.Name = "lstbResumoCadastro";
             lstbResumoCadastro.Size = new Size(566, 94);
             lstbResumoCadastro.TabIndex = 50;
+            lstbResumoCadastro.SelectedIndexChanged += lstbResumoCadastro_SelectedIndexChanged;
             // 
             // txtRgCliente
             // 
@@ -473,6 +475,7 @@
             Name = "CadastroCliente";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastrar Cliente";
+            Load += CadastroCliente_Load;
             gpbContatoCliente.ResumeLayout(false);
             gpbContatoCliente.PerformLayout();
             gpbEnderecoCliente.ResumeLayout(false);

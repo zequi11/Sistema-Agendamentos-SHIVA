@@ -15,7 +15,7 @@ namespace SistemaDeAgendementos
             dtConsultas = new DataTable();
         }
 
-        private void FormAgendamentos_Load(object sender, EventArgs e)
+        private void FormVerAgendamentos_Load(object sender, EventArgs e)
         {
             CarregarTodasConsultas();
         }
@@ -24,15 +24,15 @@ namespace SistemaDeAgendementos
         {
             string query = @"
                 SELECT
-                    c.id_consulta,
-                    cl.nome_cliente,
-                    c.dataHora_consulta,
-                    c.tipo_consulta,
-                    c.descricao_consulta,
-                    c.status_consulta,
-                    c.obs_consulta
-                FROM Consulta c
-                INNER JOIN Cliente cl ON cl.id_cliente = c.id_cliente_consulta";
+                    id_consulta,
+                    nome_cliente,
+                    dataHora_consulta,
+                    tipo_consulta,
+                    descricao_consulta,
+                    status_consulta,
+                    obs_consulta
+                FROM Consulta 
+                INNER JOIN Cliente ON id_cliente = id_cliente_consulta";
 
             try
             {
@@ -184,5 +184,7 @@ namespace SistemaDeAgendementos
             dtpDataSelecionada.Value = DateTime.Today;
             CarregarTodasConsultas();
         }
+
+
     }
 }

@@ -33,12 +33,11 @@
             label1 = new Label();
             txtSenhaAdmin = new TextBox();
             txtUserAdmin = new TextBox();
-            label3 = new Label();
             SuspendLayout();
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(259, 186);
+            btnLogin.Location = new Point(264, 167);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 23);
             btnLogin.TabIndex = 11;
@@ -49,7 +48,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(191, 149);
+            label2.Location = new Point(196, 130);
             label2.Name = "label2";
             label2.Size = new Size(42, 15);
             label2.TabIndex = 9;
@@ -58,7 +57,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(191, 117);
+            label1.Location = new Point(196, 98);
             label1.Name = "label1";
             label1.Size = new Size(50, 15);
             label1.TabIndex = 8;
@@ -66,7 +65,7 @@
             // 
             // txtSenhaAdmin
             // 
-            txtSenhaAdmin.Location = new Point(247, 146);
+            txtSenhaAdmin.Location = new Point(252, 127);
             txtSenhaAdmin.Name = "txtSenhaAdmin";
             txtSenhaAdmin.PasswordChar = '*';
             txtSenhaAdmin.Size = new Size(100, 23);
@@ -74,20 +73,10 @@
             // 
             // txtUserAdmin
             // 
-            txtUserAdmin.Location = new Point(247, 117);
+            txtUserAdmin.Location = new Point(252, 98);
             txtUserAdmin.Name = "txtUserAdmin";
             txtUserAdmin.Size = new Size(100, 23);
             txtUserAdmin.TabIndex = 6;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16F);
-            label3.Location = new Point(190, 23);
-            label3.Name = "label3";
-            label3.Size = new Size(209, 30);
-            label3.TabIndex = 10;
-            label3.Text = "Bem-Vinda Noemia!";
             // 
             // FormLoginAdm
             // 
@@ -95,7 +84,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 333);
             Controls.Add(btnLogin);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtSenhaAdmin);
@@ -115,6 +103,5 @@
         private Label label1;
         private TextBox txtSenhaAdmin;
         private TextBox txtUserAdmin;
-        private Label label3;
     }
 }

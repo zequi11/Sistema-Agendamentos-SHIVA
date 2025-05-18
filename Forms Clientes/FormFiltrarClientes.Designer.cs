@@ -123,6 +123,7 @@
             Controls.Add(btnLimpar);
             Controls.Add(btnFiltrarNome);
             Name = "FormFiltrarClientes";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Procurar Clientes";
             Load += FormFiltrarClientes_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();

@@ -17,6 +17,11 @@ namespace SistemaDeAgendementos
             InitializeComponent();
         }
 
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void novoAgendamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -49,13 +54,6 @@ namespace SistemaDeAgendementos
             FormFiltrarClientes formFiltrarClientes = new FormFiltrarClientes();
             formFiltrarClientes.MdiParent = this;
             formFiltrarClientes.Show();
-        }
-
-
-
-        private void FormPrincipal_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void cadastroProdutosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -151,6 +149,22 @@ namespace SistemaDeAgendementos
             formVerAgendamentos.MdiParent = this;
             formVerAgendamentos.Show();
 
+        }
+
+        private void alterarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FormListaClientes)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            FormListaClientes formLista = new FormListaClientes();
+            formLista.MdiParent = this;
+            formLista.Show();
         }
     }
 }

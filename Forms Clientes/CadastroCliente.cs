@@ -37,6 +37,11 @@ namespace SistemaDeAgendementos
             txtNomeCliente.Focus();
         }
 
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void CarregarListas()
         {
             string[] estados = { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" };
@@ -210,6 +215,11 @@ namespace SistemaDeAgendementos
             txtContatoEmail.Clear();
             dttmCliente.Value = DateTime.Today;
             txtNomeCliente.Focus();
+        }
+
+        private void lstbResumoCadastro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

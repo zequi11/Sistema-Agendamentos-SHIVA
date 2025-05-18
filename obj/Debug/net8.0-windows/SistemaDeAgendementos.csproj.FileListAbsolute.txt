@@ -216,3 +216,5 @@ C:\Users\ezequiel.ecsantos\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net
 C:\Users\ezequiel.ecsantos\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormVerAgendamentos.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormSelecionarCliente.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormVerAgendamentos.resources
+C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormEditarClientes.resources
+C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormListaClientes.resources
