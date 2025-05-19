@@ -70,7 +70,8 @@ namespace SistemaDeAgendementos
             int idConsulta = Convert.ToInt32(dataGridConsultas.SelectedRows[0].Cells["id_consulta"].Value);
 
             FormEditarAgendamento formEditar = new FormEditarAgendamento(idConsulta);
-            formEditar.ShowDialog();
+            formEditar.Show();
+            this.Hide();
         }
 
         private void btnLimparFiltros_Click_1(object sender, EventArgs e)

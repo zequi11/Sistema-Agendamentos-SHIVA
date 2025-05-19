@@ -8,7 +8,7 @@ namespace SistemaDeAgendementos
 {
     public static class Conexao
     {
-        public static string stringConexao = "Server=localhost\\SQLEXPRESS;Database=SistemaDeAgendamento;Trusted_Connection=True;TrustServerCertificate=True;";
+        public static string stringConexao = "Server=localhost;Database=SistemaAgendamento;User Id=sa;Password=123456;TrustServerCertificate=True;";
     }
 
 }

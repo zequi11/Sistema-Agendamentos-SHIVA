@@ -60,6 +60,7 @@
             btnProsseguir.TabIndex = 25;
             btnProsseguir.Text = "Alterar";
             btnProsseguir.UseVisualStyleBackColor = true;
+            btnProsseguir.Click += btnProsseguir_Click;
             // 
             // cmb2
             // 
