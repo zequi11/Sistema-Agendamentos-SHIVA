@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\cilei\\SistemaDeAgendementos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms agendamentos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormEscolhaServico.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEscolhaServico.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormEscolhaServico.cs",
+              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEscolhaServico.cs [Projeto]",
+              "RelativeToolTip": "Forms Agendamentos\\FormEscolhaServico.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:28:25.575Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }
