@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\cilei\\SistemaDeAgendementos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\cilei\\sistemadeagendementos\\forms agendamentos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,40 +42,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Conexao.cs",
-              "RelativeDocumentMoniker": "Conexao.cs",
-              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Conexao.cs",
-              "RelativeToolTip": "Conexao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FormVerAgendamentos.cs",
+              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormVerAgendamentos.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormVerAgendamentos.cs",
+              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormVerAgendamentos.cs",
+              "RelativeToolTip": "Forms Agendamentos\\FormVerAgendamentos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T01:45:42.795Z",
+              "WhenOpened": "2025-05-19T14:33:14.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FormVerAgendamentos.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormVerAgendamentos.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormVerAgendamentos.cs",
+              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormVerAgendamentos.cs [Projeto]",
+              "RelativeToolTip": "Forms Agendamentos\\FormVerAgendamentos.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:33:12.454Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs",
+              "RelativeToolTip": "FormPrincipal.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAnwEMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:13:33.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FormPrincipal.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "FormPrincipal.cs",
               "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\FormPrincipal.cs [Projeto]",
               "RelativeToolTip": "FormPrincipal.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T01:39:19.669Z",
+              "WhenOpened": "2025-05-19T14:13:25.428Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormEscolhaServico.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEscolhaServico.cs",
-              "RelativeDocumentMoniker": "Forms Agendamentos\\FormEscolhaServico.cs",
-              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEscolhaServico.cs [Projeto]",
-              "RelativeToolTip": "Forms Agendamentos\\FormEscolhaServico.cs [Projeto]",
+              "DocumentIndex": 3,
+              "Title": "FormEditarAgendamento.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEditarAgendamento.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormEditarAgendamento.cs",
+              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEditarAgendamento.cs [Projeto]",
+              "RelativeToolTip": "Forms Agendamentos\\FormEditarAgendamento.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:28:25.575Z",
+              "WhenOpened": "2025-05-19T14:10:28.071Z",
               "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormEditarAgendamento.cs",
+              "DocumentMoniker": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEditarAgendamento.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormEditarAgendamento.cs",
+              "ToolTip": "C:\\Users\\cilei\\SistemaDeAgendementos\\Forms Agendamentos\\FormEditarAgendamento.cs",
+              "RelativeToolTip": "Forms Agendamentos\\FormEditarAgendamento.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:57:59.707Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -79,6 +79,7 @@
             alterarAgendamentoToolStripMenuItem.Name = "alterarAgendamentoToolStripMenuItem";
             alterarAgendamentoToolStripMenuItem.Size = new Size(207, 22);
             alterarAgendamentoToolStripMenuItem.Text = "Alterar Agendamento";
+            alterarAgendamentoToolStripMenuItem.Click += alterarAgendamentoToolStripMenuItem_Click;
             // 
             // clientesToolStripMenuItem
             // 
@@ -90,21 +91,21 @@
             // cadastrarClientesToolStripMenuItem
             // 
             cadastrarClientesToolStripMenuItem.Name = "cadastrarClientesToolStripMenuItem";
-            cadastrarClientesToolStripMenuItem.Size = new Size(180, 22);
+            cadastrarClientesToolStripMenuItem.Size = new Size(169, 22);
             cadastrarClientesToolStripMenuItem.Text = "Cadastrar Clientes";
             cadastrarClientesToolStripMenuItem.Click += cadastrarClientesToolStripMenuItem_Click_1;
             // 
             // visualizarClientesToolStripMenuItem
             // 
             visualizarClientesToolStripMenuItem.Name = "visualizarClientesToolStripMenuItem";
-            visualizarClientesToolStripMenuItem.Size = new Size(180, 22);
+            visualizarClientesToolStripMenuItem.Size = new Size(169, 22);
             visualizarClientesToolStripMenuItem.Text = "Visualizar Clientes";
             visualizarClientesToolStripMenuItem.Click += visualizarClientesToolStripMenuItem_Click;
             // 
             // alterarClienteToolStripMenuItem
             // 
             alterarClienteToolStripMenuItem.Name = "alterarClienteToolStripMenuItem";
-            alterarClienteToolStripMenuItem.Size = new Size(180, 22);
+            alterarClienteToolStripMenuItem.Size = new Size(169, 22);
             alterarClienteToolStripMenuItem.Text = "Alterar Cliente";
             alterarClienteToolStripMenuItem.Click += alterarClienteToolStripMenuItem_Click;
             // 

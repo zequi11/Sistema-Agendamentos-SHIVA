@@ -218,3 +218,5 @@ C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendemen
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormVerAgendamentos.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormEditarClientes.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormListaClientes.resources
+C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormEditarAgendamento.resources
+C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormSelecionarAgendamento.resources

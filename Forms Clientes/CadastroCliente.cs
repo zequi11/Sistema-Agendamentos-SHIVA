@@ -24,11 +24,11 @@ namespace SistemaDeAgendementos
         string estadoCliente;
 
         // Contatos
-        string contatoCelular1;
-        string contatoCelular2;
-        string contatoTelefone1;
-        string contatoTelefone2;
-        string contatoEmail;
+        string Celular1;
+        string Telefone1;
+        string Email;
+        string TelefoneEmergencia;
+        string CelularEmergencia;
 
         public CadastroCliente()
         {
@@ -51,7 +51,6 @@ namespace SistemaDeAgendementos
             cmbEstadoCivil.Items.AddRange(estadosCivis);
         }
 
-        // NOVO MÉTODO PARA VERIFICAR EXISTÊNCIA DO CPF NO BANCO
         private bool ClienteExiste(string cpf)
         {
             using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
@@ -79,8 +78,8 @@ namespace SistemaDeAgendementos
                 string.IsNullOrWhiteSpace(txtCidadeCliente.Text) ||
                 cmbEstadoCliente.SelectedIndex == -1 ||
                 cmbEstadoCivil.SelectedIndex == -1 ||
-                string.IsNullOrWhiteSpace(txtNmroCelular1.Text) ||
-                string.IsNullOrWhiteSpace(txtContatoEmail.Text))
+                string.IsNullOrWhiteSpace(txtCelular1.Text) ||
+                string.IsNullOrWhiteSpace(txtContatoEmergenciaCel.Text))
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -97,11 +96,13 @@ namespace SistemaDeAgendementos
                 MessageBox.Show("CEP inválido. Use o formato 00000-000.", "CEP inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-
-            if (!Regex.IsMatch(txtContatoEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            if (!string.IsNullOrEmpty(txtEmail.Text))
             {
-                MessageBox.Show("E-mail inválido.", "E-mail inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
+                if (!Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("E-mail inválido.", "E-mail inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
             }
 
             if (dttmCliente.Value.Date > DateTime.Today)
@@ -132,13 +133,13 @@ namespace SistemaDeAgendementos
             cidadeCliente = txtCidadeCliente.Text.Trim();
             estadoCliente = cmbEstadoCliente.Text;
 
-            contatoCelular1 = txtNmroCelular1.Text.Trim();
-            contatoCelular2 = txtNmroCelular2.Text.Trim();
-            contatoTelefone1 = txtNmroTelefone1.Text.Trim();
-            contatoTelefone2 = txtNmroTelefone2.Text.Trim();
-            contatoEmail = txtContatoEmail.Text.Trim();
+            Celular1 = txtCelular1.Text.Trim();
+            Telefone1 = txtTelefone1.Text.Trim();
+            Email = txtEmail.Text.Trim();
+            TelefoneEmergencia = txtContatoEmergenciaTel.Text.Trim();
+            CelularEmergencia = txtContatoEmergenciaCel.Text.Trim();
 
-            // VERIFICA SE JÁ EXISTE UM CLIENTE COM O MESMO CPF
+
             if (ClienteExiste(cpfCliente))
             {
                 MessageBox.Show("Já existe um cliente cadastrado com este CPF.", "CPF Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -146,17 +147,18 @@ namespace SistemaDeAgendementos
             }
 
             string query = @"
-                INSERT INTO Cliente 
-                (nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente, 
-                 logradouro_cliente, numero_cliente, complemento_cliente, 
-                 bairro_cliente, cep_cliente, cidade_cliente, uf_cliente, 
-                 estadoCivil_cliente, contato1_cliente, contato2_cliente, 
-                 contatoEmergencia_cliente) 
-                VALUES 
-                (@nome, @nasc, @rg, @cpf, 
-                 @endereco, @numero, @complemento, 
-                 @bairro, @cep, @cidade, @uf, 
-                 @estadoCivil, @contato1, @contato2, @contatoEmergencia)";
+            INSERT INTO Cliente 
+            (nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente, 
+             logradouro_cliente, numero_cliente, complemento_cliente, 
+             bairro_cliente, cep_cliente, cidade_cliente, uf_cliente, 
+             estadoCivil_cliente, celular1_cliente, telefone1_cliente, 
+             email_cliente, contatoEmergenciaTel_cliente, contatoEmergenciaCel_cliente) 
+            VALUES 
+            (@nome, @nasc, @rg, @cpf, 
+             @endereco, @numero, @complemento, 
+             @bairro, @cep, @cidade, @uf, 
+             @estadoCivil, @celular1, @telefone1, 
+             @email, @contatoEmergTel, @contatoEmergCel)";
 
             try
             {
@@ -175,23 +177,20 @@ namespace SistemaDeAgendementos
                     cmd.Parameters.AddWithValue("@cidade", cidadeCliente);
                     cmd.Parameters.AddWithValue("@uf", estadoCliente);
                     cmd.Parameters.AddWithValue("@estadoCivil", estadoCivilCliente);
-                    cmd.Parameters.AddWithValue("@contato1", contatoCelular1);
-                    cmd.Parameters.AddWithValue("@contato2", string.IsNullOrWhiteSpace(contatoCelular2) ? DBNull.Value : contatoCelular2);
-                    cmd.Parameters.AddWithValue("@contatoEmergencia", contatoTelefone1);
+
+                    cmd.Parameters.AddWithValue("@celular1", Celular1);
+                    cmd.Parameters.AddWithValue("@telefone1", string.IsNullOrWhiteSpace(Telefone1) ? DBNull.Value : Telefone1);
+                    cmd.Parameters.AddWithValue("@email", string.IsNullOrWhiteSpace(Email) ? DBNull.Value : Email);
+                    cmd.Parameters.AddWithValue("@contatoEmergTel", string.IsNullOrWhiteSpace(TelefoneEmergencia) ? DBNull.Value : TelefoneEmergencia);
+                    cmd.Parameters.AddWithValue("@contatoEmergCel", CelularEmergencia);
 
                     conn.Open();
                     cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    lstbResumoCadastro.Items.Add($"Nome: {nomeCliente} - Nascimento: {dataNascimento:dd/MM/yyyy} - CPF: {cpfCliente} - Contato: {contatoCelular1} - Estado: {estadoCliente}");
-
-                    btnLimpar.PerformClick(); // Limpa os campos
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao cadastrar: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao inserir cliente: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -208,18 +207,15 @@ namespace SistemaDeAgendementos
             txtCidadeCliente.Clear();
             cmbEstadoCliente.SelectedIndex = -1;
             cmbEstadoCivil.SelectedIndex = -1;
-            txtNmroCelular1.Clear();
-            txtNmroCelular2.Clear();
-            txtNmroTelefone1.Clear();
-            txtNmroTelefone2.Clear();
-            txtContatoEmail.Clear();
+            txtCelular1.Clear();
+            txtContatoEmergenciaCel.Clear();
+            txtTelefone1.Clear();
+            txtContatoEmergenciaTel.Clear();
+            txtEmail.Clear();
             dttmCliente.Value = DateTime.Today;
             txtNomeCliente.Focus();
         }
 
-        private void lstbResumoCadastro_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
