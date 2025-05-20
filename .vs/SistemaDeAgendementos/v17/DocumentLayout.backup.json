@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\formeditarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\formeditarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CadastroCliente.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\CadastroCliente.cs",
-              "RelativeDocumentMoniker": "Forms Clientes\\CadastroCliente.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\CadastroCliente.cs [Projeto]",
-              "RelativeToolTip": "Forms Clientes\\CadastroCliente.cs [Projeto]",
+              "Title": "FormListaClientes.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\FormListaClientes.cs",
+              "RelativeDocumentMoniker": "Forms Clientes\\FormListaClientes.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\FormListaClientes.cs",
+              "RelativeToolTip": "Forms Clientes\\FormListaClientes.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAmwBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:24:44.931Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-05-20T20:25:29.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CadastroCliente.cs",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\CadastroCliente.cs",
-              "RelativeDocumentMoniker": "Forms Clientes\\CadastroCliente.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\CadastroCliente.cs",
-              "RelativeToolTip": "Forms Clientes\\CadastroCliente.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwFIAAAA5AAAAAAAAAA==",
+              "Title": "FormEditarClientes.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\FormEditarClientes.cs",
+              "RelativeDocumentMoniker": "Forms Clientes\\FormEditarClientes.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\FormEditarClientes.cs",
+              "RelativeToolTip": "Forms Clientes\\FormEditarClientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:21:18.064Z",
+              "WhenOpened": "2025-05-20T20:25:21.404Z",
               "EditorCaption": ""
             }
           ]

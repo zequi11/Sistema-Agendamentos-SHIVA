@@ -8,7 +8,7 @@ namespace SistemaDeAgendementos
 {
     public partial class FormEditarClientes : Form
     {
-        string cpfCliente;
+        private readonly string cpfCliente;
 
         public FormEditarClientes(string cpf)
         {
@@ -59,13 +59,13 @@ namespace SistemaDeAgendementos
                         txtNmroCelular1.Text = reader["contato1_cliente"].ToString();
                         txtNmroCelular2.Text = reader["contato2_cliente"].ToString();
                         txtNmroTelefone1.Text = reader["contatoEmergencia_cliente"].ToString();
+                        txtContatoEmail.Text = reader["email_cliente"].ToString(); // Incluindo email
                     }
                     else
                     {
                         MessageBox.Show("Cliente não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         Close();
                     }
-
                 }
             }
         }
@@ -116,18 +116,19 @@ namespace SistemaDeAgendementos
             return true;
         }
 
-        private void btnSalvarAlteracoes_Click_1(object sender, EventArgs e)
+        private void btnSalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            if (!ValidarCamposObrigatorios()) return;
+            if (!ValidarCamposObrigatorios())
+                return;
 
             using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
             {
                 string query = @"
                     UPDATE Cliente SET 
                         nome_cliente = @nome,
-                        nascimento_cliente = @nasc,
+                        nascimento_cliente = @nascimento,
                         rg_cliente = @rg,
-                        logradouro_cliente = @endereco,
+                        logradouro_cliente = @logradouro,
                         numero_cliente = @numero,
                         complemento_cliente = @complemento,
                         bairro_cliente = @bairro,
@@ -137,15 +138,16 @@ namespace SistemaDeAgendementos
                         estadoCivil_cliente = @estadoCivil,
                         contato1_cliente = @contato1,
                         contato2_cliente = @contato2,
-                        contatoEmergencia_cliente = @contatoEmergencia
+                        contatoEmergencia_cliente = @contatoEmergencia,
+                        email_cliente = @email
                     WHERE cpf_cliente = @cpf";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nome", txtNomeCliente.Text.Trim());
-                    cmd.Parameters.AddWithValue("@nasc", dttmCliente.Value.Date);
+                    cmd.Parameters.AddWithValue("@nascimento", dttmCliente.Value.Date);
                     cmd.Parameters.AddWithValue("@rg", txtRgCliente.Text.Trim());
-                    cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text.Trim());
+                    cmd.Parameters.AddWithValue("@logradouro", txtEndereco.Text.Trim());
                     cmd.Parameters.AddWithValue("@numero", txtNumeroEndereco.Text.Trim());
                     cmd.Parameters.AddWithValue("@complemento", string.IsNullOrWhiteSpace(txtComplementoCasa.Text) ? DBNull.Value : txtComplementoCasa.Text.Trim());
                     cmd.Parameters.AddWithValue("@bairro", txtBairroCliente.Text.Trim());
@@ -156,12 +158,21 @@ namespace SistemaDeAgendementos
                     cmd.Parameters.AddWithValue("@contato1", txtNmroCelular1.Text.Trim());
                     cmd.Parameters.AddWithValue("@contato2", string.IsNullOrWhiteSpace(txtNmroCelular2.Text) ? DBNull.Value : txtNmroCelular2.Text.Trim());
                     cmd.Parameters.AddWithValue("@contatoEmergencia", txtNmroTelefone1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@email", txtContatoEmail.Text.Trim());
                     cmd.Parameters.AddWithValue("@cpf", cpfCliente);
 
                     conn.Open();
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Dados atualizados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Close();
+                    int linhasAfetadas = cmd.ExecuteNonQuery();
+
+                    if (linhasAfetadas > 0)
+                    {
+                        MessageBox.Show("Dados atualizados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nenhum dado foi atualizado. Verifique se o cliente existe.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
         }
@@ -170,7 +181,6 @@ namespace SistemaDeAgendementos
         {
             txtNomeCliente.Clear();
             txtRgCliente.Clear();
-            txtCpfClinte.Clear();
             txtEndereco.Clear();
             txtNumeroEndereco.Clear();
             txtComplementoCasa.Clear();
@@ -182,10 +192,14 @@ namespace SistemaDeAgendementos
             txtNmroCelular1.Clear();
             txtNmroCelular2.Clear();
             txtNmroTelefone1.Clear();
-            txtNmroTelefone2.Clear();
             txtContatoEmail.Clear();
             dttmCliente.Value = DateTime.Today;
             txtNomeCliente.Focus();
+        }
+
+        private void FormEditarClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

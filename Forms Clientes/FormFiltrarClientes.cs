@@ -26,8 +26,8 @@ namespace SistemaDeAgendementos
                 SELECT id_cliente, nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente,
                        logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
                        cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
-                       contato1_cliente, contato2_cliente, contatoEmergencia_cliente,
-                       status_cliente, obs_cliente
+                       celular1_cliente, telefone1_cliente, email_cliente, contatoEmergenciaTel_cliente,
+                       contatoEmergenciaCel_cliente, status_cliente, obs_cliente
                 FROM Cliente";
 
             try
@@ -68,10 +68,10 @@ namespace SistemaDeAgendementos
 
             string query = @"
                 SELECT id_cliente, nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente,
-                logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
-                cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
-                contato1_cliente, contato2_cliente, contatoEmergencia_cliente,
-                status_cliente, obs_cliente
+                       logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
+                       cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
+                       celular1_cliente, telefone1_cliente, email_cliente, contatoEmergenciaTel_cliente,
+                       contatoEmergenciaCel_cliente, status_cliente, obs_cliente
                 FROM Cliente
                 WHERE nome_cliente LIKE @nomeCliente";
 
@@ -111,8 +111,8 @@ namespace SistemaDeAgendementos
                 SELECT id_cliente, nome_cliente, nascimento_cliente, rg_cliente, cpf_cliente,
                        logradouro_cliente, numero_cliente, complemento_cliente, bairro_cliente,
                        cep_cliente, cidade_cliente, uf_cliente, estadoCivil_cliente,
-                       contato1_cliente, contato2_cliente, contatoEmergencia_cliente,
-                       status_cliente, obs_cliente
+                       celular1_cliente, telefone1_cliente, email_cliente, contatoEmergenciaTel_cliente,
+                       contatoEmergenciaCel_cliente, status_cliente, obs_cliente
                 FROM Cliente
                 WHERE cpf_cliente = @cpfCliente";
 

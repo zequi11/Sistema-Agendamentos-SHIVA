@@ -187,6 +187,10 @@ namespace SistemaDeAgendementos
 
                     conn.Open();
                     cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    btnLimpar_Click_1(null, null);
                 }
             }
             catch (Exception ex)

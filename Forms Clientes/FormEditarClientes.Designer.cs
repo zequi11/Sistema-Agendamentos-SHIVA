@@ -429,7 +429,6 @@
             btnSalvarAlteracoes.TabIndex = 51;
             btnSalvarAlteracoes.Text = "Salvar Edição";
             btnSalvarAlteracoes.UseVisualStyleBackColor = true;
-            btnSalvarAlteracoes.Click += btnSalvarAlteracoes_Click_1;
             // 
             // gpbContatoCliente
             // 
@@ -474,6 +473,7 @@
             Name = "FormEditarClientes";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Editar Cadastro de Cliente";
+            Load += FormEditarClientes_Load;
             gpbEnderecoCliente.ResumeLayout(false);
             gpbEnderecoCliente.PerformLayout();
             gpbDadosCliente.ResumeLayout(false);
