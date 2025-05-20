@@ -79,7 +79,8 @@ namespace SistemaDeAgendementos
                 cmbEstadoCliente.SelectedIndex == -1 ||
                 cmbEstadoCivil.SelectedIndex == -1 ||
                 string.IsNullOrWhiteSpace(txtCelular1.Text) ||
-                string.IsNullOrWhiteSpace(txtContatoEmergenciaCel.Text))
+                string.IsNullOrWhiteSpace(txtContatoEmergenciaCel.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
