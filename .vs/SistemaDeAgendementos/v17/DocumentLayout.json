@@ -1,14 +1,47 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\",
+  "WorkspaceRootPath": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\cadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\forms ficha\\formverfichas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms ficha\\formverfichas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formveragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\forms ficha\\formverfichas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms ficha\\formverfichas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\forms ficha\\cadastroficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms ficha\\cadastroficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\gabriella.lsilva15\\source\\repos\\sistema-agendamentos-shiva\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -21,11 +54,67 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Conexao.cs",
+              "RelativeDocumentMoniker": "Conexao.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Conexao.cs",
+              "RelativeToolTip": "Conexao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T19:42:20.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormVerAgendamentos.cs",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormVerAgendamentos.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormVerAgendamentos.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormVerAgendamentos.cs",
+              "RelativeToolTip": "Forms Agendamentos\\FormVerAgendamentos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T19:21:31.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormVerFichas.cs",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Ficha\\FormVerFichas.cs",
+              "RelativeDocumentMoniker": "Forms Ficha\\FormVerFichas.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Ficha\\FormVerFichas.cs",
+              "RelativeToolTip": "Forms Ficha\\FormVerFichas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:02:49.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormVerAgendamentos.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormVerAgendamentos.cs",
+              "RelativeDocumentMoniker": "Forms Agendamentos\\FormVerAgendamentos.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormVerAgendamentos.cs [Projeto]",
+              "RelativeToolTip": "Forms Agendamentos\\FormVerAgendamentos.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T19:21:29.981Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "CadastroCliente.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\CadastroCliente.cs",
@@ -34,10 +123,21 @@
               "RelativeToolTip": "Forms Clientes\\CadastroCliente.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T18:24:44.931Z",
+=======
+              "DocumentIndex": 6,
+              "Title": "CadastroFicha.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Ficha\\CadastroFicha.cs",
+              "RelativeDocumentMoniker": "Forms Ficha\\CadastroFicha.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Ficha\\CadastroFicha.cs [Projeto]",
+              "RelativeToolTip": "Forms Ficha\\CadastroFicha.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:03:27.703Z",
+>>>>>>> Stashed changes
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "CadastroCliente.cs",
               "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\CadastroCliente.cs",
@@ -47,7 +147,42 @@
               "ViewState": "AgIAADsAAAAAAAAAAAAIwFIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T18:21:18.064Z",
+=======
+              "DocumentIndex": 5,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\FormPrincipal.cs",
+              "RelativeToolTip": "FormPrincipal.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAADwv0gAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:01:33.791Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\FormPrincipal.cs [Projeto]",
+              "RelativeToolTip": "FormPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:00:44.978Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormVerFichas.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Ficha\\FormVerFichas.cs",
+              "RelativeDocumentMoniker": "Forms Ficha\\FormVerFichas.cs",
+              "ToolTip": "C:\\Users\\gabriella.lsilva15\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Ficha\\FormVerFichas.cs [Projeto]",
+              "RelativeToolTip": "Forms Ficha\\FormVerFichas.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:54:20.304Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

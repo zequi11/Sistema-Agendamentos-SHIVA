@@ -263,5 +263,10 @@ namespace SistemaDeAgendementos
         {
 
         }
+
+        private void CadastroFicha_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

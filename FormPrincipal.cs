@@ -68,6 +68,11 @@ namespace SistemaDeAgendementos
             AbrirOuAtivar<FormSelecionarAgendamento>();
         }
 
+        private void visualizarFichasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirOuAtivar<FormVerFichas>();
+        }
+
         private void AbrirOuAtivar<T>() where T : Form, new()
         {
             Form formAberto = null;
