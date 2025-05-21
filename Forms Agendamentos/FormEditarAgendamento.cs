@@ -17,18 +17,19 @@ public partial class FormEditarAgendamento : Form
     public string tipoDaConsulta;
     public string descricaoConsulta;
 
+    private bool carregandoDados = false;
+
     public FormEditarAgendamento(int idConsulta)
     {
         InitializeComponent();
         this.idConsulta = idConsulta;
 
-        cmb1.SelectedIndexChanged += cmb_SelectedIndexChanged;
-        cmb2.SelectedIndexChanged += cmb_SelectedIndexChanged;
-        cmb3.SelectedIndexChanged += cmb_SelectedIndexChanged;
     }
 
     private void FormEditarAgendamento_Load(object sender, EventArgs e)
     {
+        carregandoDados = true;
+
         var comboBoxes = new List<ComboBox> { cmb1, cmb2, cmb3 };
         foreach (var cmb in comboBoxes)
         {
@@ -37,27 +38,33 @@ public partial class FormEditarAgendamento : Form
 
         CarregarDadosAgendamento();
 
+        carregandoDados = false;
     }
 
     private void cmb_SelectedIndexChanged(object sender, EventArgs e)
     {
+        if (carregandoDados) return;
+
         ComboBox cmb = sender as ComboBox;
 
         if (cmb.SelectedIndex != -1)
         {
-            terapiaSelecionada = cmb.SelectedItem.ToString();
+            string nomeSelecionado = cmb.SelectedItem.ToString();
 
-            DialogResult resultado = MessageBox.Show($"Você selecionou '{cmb.SelectedItem.ToString()}'. Confirma?", "Confirmar Seleção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult resultado = MessageBox.Show(
+                $"Você selecionou '{nomeSelecionado}'. Confirma?",
+                "Confirmar Seleção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (resultado == DialogResult.Yes)
             {
+                terapiaSelecionada = nomeSelecionado;
+                idTerapia = ObterIdTerapiaPorNome(nomeSelecionado);
                 DesabilitarOutrosComboBoxes(cmb);
             }
             else
             {
                 cmb.SelectedIndex = -1;
                 HabilitarTodosComboBoxes();
-                terapiaSelecionada = null;
             }
         }
     }
@@ -106,11 +113,34 @@ public partial class FormEditarAgendamento : Form
             }
         }
 
-
         dtpDia.Value = dataHoraSelecionada.Date;
         dtpHora.Value = DateTime.Today.Add(dataHoraSelecionada.TimeOfDay);
         cmbTipoConsulta.Text = tipoDaConsulta;
         txtDescricaoConsulta.Text = descricaoConsulta;
+
+        string nomeTerapia = ObterNomeTerapiaPorId(idTerapia);
+        SelecionarTerapiaNosCombos(nomeTerapia);
+    }
+
+    private void SelecionarTerapiaNosCombos(string nomeTerapia)
+    {
+        foreach (ComboBox cmb in new[] { cmb1, cmb2, cmb3 })
+        {
+            for (int i = 0; i < cmb.Items.Count; i++)
+            {
+                var item = cmb.Items[i];
+                if (item.ToString().Equals(nomeTerapia, StringComparison.OrdinalIgnoreCase))
+                {
+                    cmb.SelectedIndexChanged -= cmb_SelectedIndexChanged;
+                    cmb.SelectedIndex = i;
+                    cmb.SelectedIndexChanged += cmb_SelectedIndexChanged;
+
+                    terapiaSelecionada = nomeTerapia;
+                    idTerapia = ObterIdTerapiaPorNome(nomeTerapia);
+                    return;
+                }
+            }
+        }
     }
 
     private string ObterNomeTerapiaPorId(int idTerapia)
@@ -196,16 +226,16 @@ public partial class FormEditarAgendamento : Form
                         tipo_consulta = @tipo,
                         descricao_consulta = @descricao,
                         dataHora_consulta = @dataHora,
-                        id_terapia_consulta = @idT,
-                    WHERE id_consulta = @id";
+                        id_terapia_consulta = @idT
+                    WHERE id_consulta = @idConsulta";
 
                 using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
                 {
                     cmd.Parameters.AddWithValue("@tipo", tipoDaConsulta);
                     cmd.Parameters.AddWithValue("@descricao", descricaoConsulta);
                     cmd.Parameters.AddWithValue("@dataHora", dataHoraSelecionada);
-                    cmd.Parameters.AddWithValue("@idT1", idTerapia);
-                    cmd.Parameters.AddWithValue("@id", idConsulta);
+                    cmd.Parameters.AddWithValue("@idT", idTerapia);
+                    cmd.Parameters.AddWithValue("@idConsulta", idConsulta);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -215,5 +245,10 @@ public partial class FormEditarAgendamento : Form
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
+    }
+
+    private void btnLimparOpcao_Click(object sender, EventArgs e)
+    {
+        HabilitarTodosComboBoxes();
     }
 }

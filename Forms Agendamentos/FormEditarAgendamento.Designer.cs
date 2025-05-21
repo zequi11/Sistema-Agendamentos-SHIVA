@@ -172,6 +172,7 @@
             btnLimparOpcao.TabIndex = 3;
             btnLimparOpcao.Text = "Limpar Opção";
             btnLimparOpcao.UseVisualStyleBackColor = true;
+            btnLimparOpcao.Click += btnLimparOpcao_Click;
             // 
             // groupBox2
             // 

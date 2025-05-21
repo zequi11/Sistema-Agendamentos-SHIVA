@@ -33,17 +33,13 @@
             label5 = new Label();
             label8 = new Label();
             txtRgCliente = new MaskedTextBox();
-            txtNmroCelular2 = new MaskedTextBox();
             txtContatoEmail = new MaskedTextBox();
             txtBairroCliente = new MaskedTextBox();
-            txtNmroCelular1 = new MaskedTextBox();
             label19 = new Label();
             label15 = new Label();
             label18 = new Label();
             label16 = new Label();
-            txtNmroTelefone2 = new MaskedTextBox();
             label17 = new Label();
-            txtNmroTelefone1 = new MaskedTextBox();
             txtCpfClinte = new MaskedTextBox();
             label1 = new Label();
             txtEndereco = new MaskedTextBox();
@@ -68,7 +64,11 @@
             label4 = new Label();
             btnSalvarAlteracoes = new Button();
             gpbContatoCliente = new GroupBox();
-            lstbResumoCadastro = new ListBox();
+            txtContatoEmergenciaCel = new MaskedTextBox();
+            txtCelular1 = new MaskedTextBox();
+            txtContatoEmergenciaTel = new MaskedTextBox();
+            txtTelefone1 = new MaskedTextBox();
+            btnDeletarCliente = new Button();
             gpbEnderecoCliente.SuspendLayout();
             gpbDadosCliente.SuspendLayout();
             gpbContatoCliente.SuspendLayout();
@@ -117,14 +117,6 @@
             txtRgCliente.Size = new Size(100, 23);
             txtRgCliente.TabIndex = 3;
             // 
-            // txtNmroCelular2
-            // 
-            txtNmroCelular2.Location = new Point(303, 38);
-            txtNmroCelular2.Mask = "(99) 00000-0000";
-            txtNmroCelular2.Name = "txtNmroCelular2";
-            txtNmroCelular2.Size = new Size(135, 23);
-            txtNmroCelular2.TabIndex = 14;
-            // 
             // txtContatoEmail
             // 
             txtContatoEmail.Location = new Point(95, 96);
@@ -138,14 +130,6 @@
             txtBairroCliente.Name = "txtBairroCliente";
             txtBairroCliente.Size = new Size(100, 23);
             txtBairroCliente.TabIndex = 10;
-            // 
-            // txtNmroCelular1
-            // 
-            txtNmroCelular1.Location = new Point(95, 38);
-            txtNmroCelular1.Mask = "(99) 00000-0000";
-            txtNmroCelular1.Name = "txtNmroCelular1";
-            txtNmroCelular1.Size = new Size(135, 23);
-            txtNmroCelular1.TabIndex = 13;
             // 
             // label19
             // 
@@ -183,14 +167,6 @@
             label16.TabIndex = 29;
             label16.Text = "Celular 2";
             // 
-            // txtNmroTelefone2
-            // 
-            txtNmroTelefone2.Location = new Point(303, 67);
-            txtNmroTelefone2.Mask = "(99) 00000-0000";
-            txtNmroTelefone2.Name = "txtNmroTelefone2";
-            txtNmroTelefone2.Size = new Size(135, 23);
-            txtNmroTelefone2.TabIndex = 16;
-            // 
             // label17
             // 
             label17.AutoSize = true;
@@ -199,14 +175,6 @@
             label17.Size = new Size(61, 15);
             label17.TabIndex = 30;
             label17.Text = "Telefone 1";
-            // 
-            // txtNmroTelefone1
-            // 
-            txtNmroTelefone1.Location = new Point(95, 67);
-            txtNmroTelefone1.Mask = "(99) 00000-0000";
-            txtNmroTelefone1.Name = "txtNmroTelefone1";
-            txtNmroTelefone1.Size = new Size(135, 23);
-            txtNmroTelefone1.TabIndex = 15;
             // 
             // txtCpfClinte
             // 
@@ -429,19 +397,20 @@
             btnSalvarAlteracoes.TabIndex = 51;
             btnSalvarAlteracoes.Text = "Salvar Edição";
             btnSalvarAlteracoes.UseVisualStyleBackColor = true;
+            btnSalvarAlteracoes.Click += btnSalvarAlteracoes_Click_1;
             // 
             // gpbContatoCliente
             // 
-            gpbContatoCliente.Controls.Add(txtNmroCelular2);
+            gpbContatoCliente.Controls.Add(txtContatoEmergenciaCel);
             gpbContatoCliente.Controls.Add(txtContatoEmail);
-            gpbContatoCliente.Controls.Add(txtNmroCelular1);
+            gpbContatoCliente.Controls.Add(txtCelular1);
             gpbContatoCliente.Controls.Add(label19);
+            gpbContatoCliente.Controls.Add(txtContatoEmergenciaTel);
+            gpbContatoCliente.Controls.Add(txtTelefone1);
             gpbContatoCliente.Controls.Add(label15);
             gpbContatoCliente.Controls.Add(label18);
             gpbContatoCliente.Controls.Add(label16);
-            gpbContatoCliente.Controls.Add(txtNmroTelefone2);
             gpbContatoCliente.Controls.Add(label17);
-            gpbContatoCliente.Controls.Add(txtNmroTelefone1);
             gpbContatoCliente.Location = new Point(166, 387);
             gpbContatoCliente.Name = "gpbContatoCliente";
             gpbContatoCliente.Size = new Size(566, 160);
@@ -449,27 +418,62 @@
             gpbContatoCliente.TabStop = false;
             gpbContatoCliente.Text = "Contatos do Cliente";
             // 
-            // lstbResumoCadastro
+            // txtContatoEmergenciaCel
             // 
-            lstbResumoCadastro.FormattingEnabled = true;
-            lstbResumoCadastro.ItemHeight = 15;
-            lstbResumoCadastro.Location = new Point(166, 608);
-            lstbResumoCadastro.Name = "lstbResumoCadastro";
-            lstbResumoCadastro.Size = new Size(566, 94);
-            lstbResumoCadastro.TabIndex = 57;
+            txtContatoEmergenciaCel.Location = new Point(303, 38);
+            txtContatoEmergenciaCel.Mask = "(99) 00000-0000";
+            txtContatoEmergenciaCel.Name = "txtContatoEmergenciaCel";
+            txtContatoEmergenciaCel.Size = new Size(135, 23);
+            txtContatoEmergenciaCel.TabIndex = 59;
+            // 
+            // txtCelular1
+            // 
+            txtCelular1.Location = new Point(95, 38);
+            txtCelular1.Mask = "(99) 00000-0000";
+            txtCelular1.Name = "txtCelular1";
+            txtCelular1.Size = new Size(135, 23);
+            txtCelular1.TabIndex = 58;
+            // 
+            // txtContatoEmergenciaTel
+            // 
+            txtContatoEmergenciaTel.Location = new Point(303, 67);
+            txtContatoEmergenciaTel.Mask = "(99) 00000-0000";
+            txtContatoEmergenciaTel.Name = "txtContatoEmergenciaTel";
+            txtContatoEmergenciaTel.Size = new Size(135, 23);
+            txtContatoEmergenciaTel.TabIndex = 61;
+            // 
+            // txtTelefone1
+            // 
+            txtTelefone1.Location = new Point(95, 67);
+            txtTelefone1.Mask = "(99) 00000-0000";
+            txtTelefone1.Name = "txtTelefone1";
+            txtTelefone1.Size = new Size(135, 23);
+            txtTelefone1.TabIndex = 60;
+            // 
+            // btnDeletarCliente
+            // 
+            btnDeletarCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDeletarCliente.ForeColor = Color.Red;
+            btnDeletarCliente.Location = new Point(166, 608);
+            btnDeletarCliente.Name = "btnDeletarCliente";
+            btnDeletarCliente.Size = new Size(566, 49);
+            btnDeletarCliente.TabIndex = 57;
+            btnDeletarCliente.Text = "Desativar Cliente";
+            btnDeletarCliente.UseVisualStyleBackColor = true;
+            btnDeletarCliente.Click += btnDeletarCliente_Click;
             // 
             // FormEditarClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(898, 732);
+            Controls.Add(btnDeletarCliente);
             Controls.Add(label1);
             Controls.Add(gpbEnderecoCliente);
             Controls.Add(btnLimpar);
             Controls.Add(gpbDadosCliente);
             Controls.Add(btnSalvarAlteracoes);
             Controls.Add(gpbContatoCliente);
-            Controls.Add(lstbResumoCadastro);
             Name = "FormEditarClientes";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Editar Cadastro de Cliente";
@@ -491,17 +495,13 @@
         private Label label5;
         private Label label8;
         private MaskedTextBox txtRgCliente;
-        private MaskedTextBox txtNmroCelular2;
         private MaskedTextBox txtContatoEmail;
         private MaskedTextBox txtBairroCliente;
-        private MaskedTextBox txtNmroCelular1;
         private Label label19;
         private Label label15;
         private Label label18;
         private Label label16;
-        private MaskedTextBox txtNmroTelefone2;
         private Label label17;
-        private MaskedTextBox txtNmroTelefone1;
         private MaskedTextBox txtCpfClinte;
         private Label label1;
         private MaskedTextBox txtEndereco;
@@ -526,6 +526,10 @@
         private Label label4;
         private Button btnSalvarAlteracoes;
         private GroupBox gpbContatoCliente;
-        private ListBox lstbResumoCadastro;
+        private MaskedTextBox txtContatoEmergenciaCel;
+        private MaskedTextBox txtCelular1;
+        private MaskedTextBox txtContatoEmergenciaTel;
+        private MaskedTextBox txtTelefone1;
+        private Button btnDeletarCliente;
     }
 }

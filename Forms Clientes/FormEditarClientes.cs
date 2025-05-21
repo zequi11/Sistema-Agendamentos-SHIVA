@@ -18,6 +18,11 @@ namespace SistemaDeAgendementos
             CarregarDadosCliente();
         }
 
+        private void FormEditarClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void CarregarListas()
         {
             string[] estados = { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" };
@@ -56,10 +61,11 @@ namespace SistemaDeAgendementos
                         txtCidadeCliente.Text = reader["cidade_cliente"].ToString();
                         cmbEstadoCliente.Text = reader["uf_cliente"].ToString();
                         cmbEstadoCivil.Text = reader["estadoCivil_cliente"].ToString();
-                        txtNmroCelular1.Text = reader["contato1_cliente"].ToString();
-                        txtNmroCelular2.Text = reader["contato2_cliente"].ToString();
-                        txtNmroTelefone1.Text = reader["contatoEmergencia_cliente"].ToString();
-                        txtContatoEmail.Text = reader["email_cliente"].ToString(); // Incluindo email
+                        txtContatoEmergenciaCel.Text = reader["contatoEmergenciaCel_cliente"].ToString();
+                        txtContatoEmergenciaTel.Text = reader["contatoEmergenciaTel_cliente"].ToString();
+                        txtContatoEmail.Text = reader["email_cliente"].ToString();
+                        txtCelular1.Text = reader["celular1_cliente"].ToString();
+                        txtTelefone1.Text = reader["telefone1_cliente"].ToString();
                     }
                     else
                     {
@@ -82,7 +88,8 @@ namespace SistemaDeAgendementos
                 string.IsNullOrWhiteSpace(txtCidadeCliente.Text) ||
                 cmbEstadoCliente.SelectedIndex == -1 ||
                 cmbEstadoCivil.SelectedIndex == -1 ||
-                string.IsNullOrWhiteSpace(txtNmroCelular1.Text) ||
+                string.IsNullOrWhiteSpace(txtCelular1.Text) ||
+                string.IsNullOrWhiteSpace(txtContatoEmergenciaCel.Text) ||
                 string.IsNullOrWhiteSpace(txtContatoEmail.Text))
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -116,7 +123,28 @@ namespace SistemaDeAgendementos
             return true;
         }
 
-        private void btnSalvarAlteracoes_Click(object sender, EventArgs e)
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNomeCliente.Clear();
+            txtRgCliente.Clear();
+            txtEndereco.Clear();
+            txtNumeroEndereco.Clear();
+            txtComplementoCasa.Clear();
+            txtCepCliente.Clear();
+            txtBairroCliente.Clear();
+            txtCidadeCliente.Clear();
+            cmbEstadoCliente.SelectedIndex = -1;
+            cmbEstadoCivil.SelectedIndex = -1;
+            txtContatoEmergenciaCel.Clear();
+            txtContatoEmergenciaTel.Clear();
+            txtTelefone1.Clear();
+            txtCelular1.Clear();
+            txtContatoEmail.Clear();
+            dttmCliente.Value = DateTime.Today;
+            txtNomeCliente.Focus();
+        }
+
+        private void btnSalvarAlteracoes_Click_1(object sender, EventArgs e)
         {
             if (!ValidarCamposObrigatorios())
                 return;
@@ -136,10 +164,11 @@ namespace SistemaDeAgendementos
                         cidade_cliente = @cidade,
                         uf_cliente = @uf,
                         estadoCivil_cliente = @estadoCivil,
-                        contato1_cliente = @contato1,
-                        contato2_cliente = @contato2,
-                        contatoEmergencia_cliente = @contatoEmergencia,
-                        email_cliente = @email
+                        celular1_cliente = @celular1,
+                        telefone1_cliente = @telefone1,
+                        email_cliente = @email,
+                        contatoEmergenciaTel_cliente = @contatoEmergenciaTel,
+                        contatoEmergenciaCel_cliente = @contatoEmergenciaCel 
                     WHERE cpf_cliente = @cpf";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -155,9 +184,10 @@ namespace SistemaDeAgendementos
                     cmd.Parameters.AddWithValue("@cidade", txtCidadeCliente.Text.Trim());
                     cmd.Parameters.AddWithValue("@uf", cmbEstadoCliente.Text);
                     cmd.Parameters.AddWithValue("@estadoCivil", cmbEstadoCivil.Text);
-                    cmd.Parameters.AddWithValue("@contato1", txtNmroCelular1.Text.Trim());
-                    cmd.Parameters.AddWithValue("@contato2", string.IsNullOrWhiteSpace(txtNmroCelular2.Text) ? DBNull.Value : txtNmroCelular2.Text.Trim());
-                    cmd.Parameters.AddWithValue("@contatoEmergencia", txtNmroTelefone1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@celular1", txtCelular1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@telefone1", string.IsNullOrWhiteSpace(txtTelefone1.Text) ? DBNull.Value : txtTelefone1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@contatoEmergenciaTel", string.IsNullOrWhiteSpace(txtContatoEmergenciaTel.Text) ? DBNull.Value : txtContatoEmergenciaTel.Text.Trim());
+                    cmd.Parameters.AddWithValue("@contatoEmergenciaCel", txtContatoEmergenciaCel.Text.Trim());
                     cmd.Parameters.AddWithValue("@email", txtContatoEmail.Text.Trim());
                     cmd.Parameters.AddWithValue("@cpf", cpfCliente);
 
@@ -177,29 +207,36 @@ namespace SistemaDeAgendementos
             }
         }
 
-        private void btnLimpar_Click(object sender, EventArgs e)
+        private void btnDeletarCliente_Click(object sender, EventArgs e)
         {
-            txtNomeCliente.Clear();
-            txtRgCliente.Clear();
-            txtEndereco.Clear();
-            txtNumeroEndereco.Clear();
-            txtComplementoCasa.Clear();
-            txtCepCliente.Clear();
-            txtBairroCliente.Clear();
-            txtCidadeCliente.Clear();
-            cmbEstadoCliente.SelectedIndex = -1;
-            cmbEstadoCivil.SelectedIndex = -1;
-            txtNmroCelular1.Clear();
-            txtNmroCelular2.Clear();
-            txtNmroTelefone1.Clear();
-            txtContatoEmail.Clear();
-            dttmCliente.Value = DateTime.Today;
-            txtNomeCliente.Focus();
-        }
+            DialogResult confirmarExclusaoCliente = MessageBox.Show("Tem certeza que deseja desativar este cliente?", "Confirmar ação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-        private void FormEditarClientes_Load(object sender, EventArgs e)
-        {
+            if (confirmarExclusaoCliente == DialogResult.Yes)
+            {
+                using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+                {
+                    string query = @"
+                    UPDATE Cliente SET 
+                        status_cliente = 'DESATIVADO'
+                    WHERE cpf_cliente = @cpf";
 
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@cpf", cpfCliente);
+
+                        conn.Open();
+
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Cliente desativado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Close();
+                    }
+                }
+            }
+            else{
+                MessageBox.Show("Cliente não desativado", "Dados não alterados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
     }
 }

@@ -67,9 +67,9 @@
             cmbTipoConsulta.Font = new Font("Segoe UI", 10F);
             cmbTipoConsulta.FormattingEnabled = true;
             cmbTipoConsulta.Items.AddRange(new object[] { "Avulsa", "Retorno", "Promocional", "Cortesia", "Reagendamento" });
-            cmbTipoConsulta.Location = new Point(28, 67);
+            cmbTipoConsulta.Location = new Point(15, 67);
             cmbTipoConsulta.Name = "cmbTipoConsulta";
-            cmbTipoConsulta.Size = new Size(200, 25);
+            cmbTipoConsulta.Size = new Size(241, 25);
             cmbTipoConsulta.TabIndex = 21;
             // 
             // groupBox3
