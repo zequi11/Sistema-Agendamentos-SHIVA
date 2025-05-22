@@ -69,6 +69,7 @@
             txtContatoEmergenciaTel = new MaskedTextBox();
             txtTelefone1 = new MaskedTextBox();
             btnDeletarCliente = new Button();
+            btnAtivarCliente = new Button();
             gpbEnderecoCliente.SuspendLayout();
             gpbDadosCliente.SuspendLayout();
             gpbContatoCliente.SuspendLayout();
@@ -462,11 +463,24 @@
             btnDeletarCliente.UseVisualStyleBackColor = true;
             btnDeletarCliente.Click += btnDeletarCliente_Click;
             // 
+            // btnAtivarCliente
+            // 
+            btnAtivarCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAtivarCliente.ForeColor = Color.Blue;
+            btnAtivarCliente.Location = new Point(166, 663);
+            btnAtivarCliente.Name = "btnAtivarCliente";
+            btnAtivarCliente.Size = new Size(566, 49);
+            btnAtivarCliente.TabIndex = 58;
+            btnAtivarCliente.Text = "Ativar Cliente";
+            btnAtivarCliente.UseVisualStyleBackColor = true;
+            btnAtivarCliente.Click += button1_Click;
+            // 
             // FormEditarClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(898, 732);
+            ClientSize = new Size(898, 784);
+            Controls.Add(btnAtivarCliente);
             Controls.Add(btnDeletarCliente);
             Controls.Add(label1);
             Controls.Add(gpbEnderecoCliente);
@@ -531,5 +545,6 @@
         private MaskedTextBox txtContatoEmergenciaTel;
         private MaskedTextBox txtTelefone1;
         private Button btnDeletarCliente;
+        private Button btnAtivarCliente;
     }
 }

@@ -1666,23 +1666,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ezequiel.ecsantos\\.nuget\\packages\\": {},
+    "C:\\Users\\henry.lllazarevic\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\SistemaDeAgendementos.csproj",
+      "projectUniqueName": "C:\\Users\\henry.lllazarevic\\OneDrive - SENAC - SP\\Documentos\\gib ShivaAnanda\\ShivaAnanda\\Sistema-Agendamentos-SHIVA\\SistemaDeAgendementos.csproj",
       "projectName": "SistemaDeAgendementos",
-      "projectPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\SistemaDeAgendementos.csproj",
-      "packagesPath": "C:\\Users\\ezequiel.ecsantos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\obj\\",
+      "projectPath": "C:\\Users\\henry.lllazarevic\\OneDrive - SENAC - SP\\Documentos\\gib ShivaAnanda\\ShivaAnanda\\Sistema-Agendamentos-SHIVA\\SistemaDeAgendementos.csproj",
+      "packagesPath": "C:\\Users\\henry.lllazarevic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\henry.lllazarevic\\OneDrive - SENAC - SP\\Documentos\\gib ShivaAnanda\\ShivaAnanda\\Sistema-Agendamentos-SHIVA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ezequiel.ecsantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\henry.lllazarevic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
