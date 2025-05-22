@@ -191,14 +191,37 @@ public partial class FormEditarAgendamento : Form
 
     private void btnCancelar_Click(object sender, EventArgs e)
     {
-        DialogResult resultado = MessageBox.Show("Deseja cancelar a edição sem salvar?", "Cancelar",
-            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        DialogResult confirmarExclusaoAgendamento = MessageBox.Show("Deseja realmente cancelar este agendamento? Esta alteração não pode ser desfeita", "Confirmar Desagendamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-        if (resultado == DialogResult.Yes)
+        if (confirmarExclusaoAgendamento == DialogResult.Yes)
         {
-            this.Close();
+            using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+            {
+                string query = @"
+                    UPDATE Consulta SET 
+                        status_consulta = 'CANCELADA'
+                    WHERE id_consulta = @id";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", idConsulta);
+
+                    conn.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Consulta cancelada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
+                }
+            }
+        }
+        else
+        {
+            MessageBox.Show("Consulta não cancelada", "Dados não alterados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return;
         }
     }
+    
 
     private void btnProsseguir_Click(object sender, EventArgs e)
     {

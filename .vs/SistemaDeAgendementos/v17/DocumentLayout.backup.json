@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formeditaragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms agendamentos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms agendamentos\\formescolhaservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|c:\\users\\ezequiel.ecsantos\\source\\repos\\sistema-agendamentos-shiva\\forms clientes\\formeditarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184F8C1C-C44D-45AF-86EB-2E5DCF0BEE58}|SistemaDeAgendementos.csproj|solutionrelative:forms clientes\\formeditarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +26,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormEscolhaServico.cs",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormEscolhaServico.cs",
-              "RelativeDocumentMoniker": "Forms Agendamentos\\FormEscolhaServico.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormEscolhaServico.cs",
-              "RelativeToolTip": "Forms Agendamentos\\FormEscolhaServico.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAqwPIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:16:26.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormEditarAgendamento.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormEditarAgendamento.cs",
-              "RelativeDocumentMoniker": "Forms Agendamentos\\FormEditarAgendamento.cs",
-              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormEditarAgendamento.cs [Projeto]",
-              "RelativeToolTip": "Forms Agendamentos\\FormEditarAgendamento.cs [Projeto]",
+              "Title": "FormEditarClientes.cs",
+              "DocumentMoniker": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\FormEditarClientes.cs",
+              "RelativeDocumentMoniker": "Forms Clientes\\FormEditarClientes.cs",
+              "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Clientes\\FormEditarClientes.cs",
+              "RelativeToolTip": "Forms Clientes\\FormEditarClientes.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAADwv9cAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:15:57.235Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-05-22T17:11:01.499Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -61,9 +45,9 @@
               "RelativeDocumentMoniker": "Forms Agendamentos\\FormEditarAgendamento.cs",
               "ToolTip": "C:\\Users\\ezequiel.ecsantos\\source\\repos\\Sistema-Agendamentos-SHIVA\\Forms Agendamentos\\FormEditarAgendamento.cs",
               "RelativeToolTip": "Forms Agendamentos\\FormEditarAgendamento.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwIIAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T19:31:30.209Z",
+              "WhenOpened": "2025-05-22T17:09:41.043Z",
               "EditorCaption": ""
             }
           ]

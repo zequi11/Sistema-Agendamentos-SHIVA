@@ -146,6 +146,7 @@
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormPrincipal";
+            WindowState = FormWindowState.Maximized;
             Load += FormPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
