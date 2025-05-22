@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            //teste
             components = new System.ComponentModel.Container();
             label14 = new Label();
             rdbFlexibilidadeBaixa = new RadioButton();
@@ -636,6 +635,7 @@
             Name = "CadastroFicha";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroFicha";
+            Load += CadastroFicha_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

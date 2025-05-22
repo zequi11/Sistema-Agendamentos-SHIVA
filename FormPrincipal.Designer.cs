@@ -41,6 +41,7 @@
             novaFichaToolStripMenuItem = new ToolStripMenuItem();
             visualizarFichasToolStripMenuItem = new ToolStripMenuItem();
             cadastroProdutosToolStripMenuItem = new ToolStripMenuItem();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -119,15 +120,16 @@
             // novaFichaToolStripMenuItem
             // 
             novaFichaToolStripMenuItem.Name = "novaFichaToolStripMenuItem";
-            novaFichaToolStripMenuItem.Size = new Size(159, 22);
+            novaFichaToolStripMenuItem.Size = new Size(180, 22);
             novaFichaToolStripMenuItem.Text = "Nova Ficha";
             novaFichaToolStripMenuItem.Click += novaFichaToolStripMenuItem_Click;
             // 
             // visualizarFichasToolStripMenuItem
             // 
             visualizarFichasToolStripMenuItem.Name = "visualizarFichasToolStripMenuItem";
-            visualizarFichasToolStripMenuItem.Size = new Size(159, 22);
+            visualizarFichasToolStripMenuItem.Size = new Size(180, 22);
             visualizarFichasToolStripMenuItem.Text = "Visualizar Fichas";
+            visualizarFichasToolStripMenuItem.Click += visualizarFichasToolStripMenuItem_Click;
             // 
             // cadastroProdutosToolStripMenuItem
             // 
@@ -135,6 +137,11 @@
             cadastroProdutosToolStripMenuItem.Size = new Size(117, 20);
             cadastroProdutosToolStripMenuItem.Text = "Cadastro Produtos";
             cadastroProdutosToolStripMenuItem.Click += cadastroProdutosToolStripMenuItem_Click;
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
             // FormPrincipal
             // 
@@ -169,5 +176,6 @@
         private ToolStripMenuItem novaFichaToolStripMenuItem;
         private ToolStripMenuItem visualizarFichasToolStripMenuItem;
         private ToolStripMenuItem cadastroProdutosToolStripMenuItem;
+        private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
     }
 }

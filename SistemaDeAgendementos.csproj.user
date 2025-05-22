@@ -40,5 +40,8 @@
     <Compile Update="Forms Agendamentos\FormSelecionarAgendamento.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms Ficha\FormVerFichas.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
