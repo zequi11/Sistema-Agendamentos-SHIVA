@@ -59,7 +59,6 @@
             Controls.Add(dataGridFichas);
             Name = "FormVerFichas";
             Text = "FormVerFichas";
-            Load += this.FormVerFichas_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridFichas).EndInit();
             ResumeLayout(false);
         }

@@ -302,3 +302,4 @@ C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\bin\Debug\ne
 C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\SistemaD.5E28CEEE.Up2Date
 C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\SistemaDeAgendementos.genruntimeconfig.cache
 C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\ref\SistemaDeAgendementos.dll
+C:\Users\ezequiel.ecsantos\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormVerFichas.resources

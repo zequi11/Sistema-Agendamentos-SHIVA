@@ -17,36 +17,10 @@ namespace SistemaDeAgendementos
             cpfCliente = cpf;
             CarregarListas();
             CarregarDadosCliente();
-            StatusClienteAtivo();
         }
 
         private void FormEditarClientes_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void StatusClienteAtivo()
-        {
-            using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
-            {
-                string query = @"
-                    UPDATE Cliente SET
-                    status_cliente = @statusCliente 
-                    WHERE cpf_cliente = @cpf;";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@statusCliente", txtStatusCliente.Text.Trim());
-                }
-            }
-            statusCliente = txtStatusCliente.Text;
-            if (txtStatusCliente.Text == "ATIVADO")
-            {
-                btnAtivarCliente.Enabled = false;
-            }
-            else if(txtStatusCliente.Text == "DESATIVADO")
-            {
-                btnDeletarCliente.Enabled = false;
-            }
         }
 
         private void CarregarListas()
@@ -92,6 +66,11 @@ namespace SistemaDeAgendementos
                         txtContatoEmail.Text = reader["email_cliente"].ToString();
                         txtCelular1.Text = reader["celular1_cliente"].ToString();
                         txtTelefone1.Text = reader["telefone1_cliente"].ToString();
+
+                        // Captura o status do cliente
+                        statusCliente = reader["status_cliente"].ToString();
+                        btnAtivarCliente.Enabled = statusCliente == "DESATIVADO";
+                        btnDeletarCliente.Enabled = statusCliente == "ATIVADO";
                     }
                     else
                     {
@@ -235,73 +214,65 @@ namespace SistemaDeAgendementos
 
         private void btnDeletarCliente_Click(object sender, EventArgs e)
         {
-            DialogResult confirmarExclusaoCliente = MessageBox.Show("Tem certeza que deseja desativar este cliente?", "Confirmar ação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (statusCliente == "DESATIVADO")
+            {
+                MessageBox.Show("Este cliente já está desativado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
-            if (confirmarExclusaoCliente == DialogResult.Yes)
+            DialogResult confirmar = MessageBox.Show("Tem certeza que deseja desativar este cliente?", "Confirmar ação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmar == DialogResult.Yes)
             {
                 using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
                 {
-                    string query = @"
-                    UPDATE Cliente SET 
-                        status_cliente = 'DESATIVADO'
-                    WHERE cpf_cliente = @cpf";
+                    string query = "UPDATE Cliente SET status_cliente = 'DESATIVADO' WHERE cpf_cliente = @cpf";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@cpf", cpfCliente);
-
                         conn.Open();
-
                         cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Cliente desativado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
                     }
+
+                    MessageBox.Show("Cliente desativado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     statusCliente = "DESATIVADO";
                     btnAtivarCliente.Enabled = true;
                     btnDeletarCliente.Enabled = false;
+                    Close();
                 }
-            }
-            else
-            {
-                MessageBox.Show("Cliente não desativado", "Dados não alterados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAtivarCliente_Click_1(object sender, EventArgs e)
         {
-            DialogResult confirmarAtivacaoCliente = MessageBox.Show("Tem certeza que deseja ativar este cliente?", "Confirmar ação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (statusCliente == "ATIVADO")
+            {
+                MessageBox.Show("Este cliente já está ativo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
-            if (confirmarAtivacaoCliente == DialogResult.Yes)
+            DialogResult confirmar = MessageBox.Show("Tem certeza que deseja ativar este cliente?", "Confirmar ação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmar == DialogResult.Yes)
             {
                 using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
                 {
-                    string query = @"
-                    UPDATE Cliente SET 
-                        status_cliente = 'ATIVADO'
-                    WHERE cpf_cliente = @cpf";
+                    string query = "UPDATE Cliente SET status_cliente = 'ATIVADO' WHERE cpf_cliente = @cpf";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@cpf", cpfCliente);
-
                         conn.Open();
-
                         cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Cliente ativado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
                     }
+
+                    MessageBox.Show("Cliente ativado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     statusCliente = "ATIVADO";
                     btnAtivarCliente.Enabled = false;
                     btnDeletarCliente.Enabled = true;
+                    Close();
                 }
-            }
-            else
-            {
-                MessageBox.Show("Cliente não desativado", "Dados não alterados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
             }
         }
     }

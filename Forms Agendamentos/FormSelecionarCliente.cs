@@ -40,6 +40,35 @@ namespace SistemaDeAgendementos
 
         }
 
+        private bool ClienteEstaAtivo(string nomeCliente)
+        {
+            using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
+            {
+                conn.Open();
+
+                string query = "SELECT status_cliente FROM Cliente WHERE nome_cliente = @nome";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nome", nomeCliente);
+
+                    object resultado = cmd.ExecuteScalar();
+
+                    if (resultado != null)
+                    {
+                        string status = resultado.ToString().ToUpper();
+                        return status == "ATIVO";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possível verificar o status do cliente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+            }
+        }
+
+
 
         public bool BuscarClientePorCPF(string cpf)
         {
@@ -233,6 +262,8 @@ namespace SistemaDeAgendementos
             }
         }
 
+
+
         private void confirmarAgendamento()
         {
             if (listBox1.SelectedItem == null)
@@ -246,6 +277,15 @@ namespace SistemaDeAgendementos
             if (MessageBox.Show($"Confirmar agendamento de {TerapiaSelecionada} para {clienteSelecionado} em {DataSelecionada} às {HoraSelecionada}?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 buscarIdCliente();
+
+                string nomeExtraido = clienteSelecionado.Split('|')[0].Replace("Nome:", "").Trim();
+
+                if (!ClienteEstaAtivo(nomeExtraido))
+                {
+                    MessageBox.Show("Este cliente está INATIVO e não pode ser agendado.", "Cliente Inativo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 buscarIdTerapia();
                 inserirAgendamento();
             }

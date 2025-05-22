@@ -473,7 +473,7 @@
             btnAtivarCliente.TabIndex = 58;
             btnAtivarCliente.Text = "Ativar Cliente";
             btnAtivarCliente.UseVisualStyleBackColor = true;
-            btnAtivarCliente.Click += button1_Click;
+            btnAtivarCliente.Click += btnAtivarCliente_Click_1;
             // 
             // FormEditarClientes
             // 
