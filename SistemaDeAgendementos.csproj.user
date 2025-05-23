@@ -16,6 +16,9 @@
     <Compile Update="Forms Ficha\CadastroFicha.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms Produtos\CadastroProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms Agendamentos\FormEscolhaServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,9 +41,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms Ficha\FormVerFichas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms Ficha\TEst.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

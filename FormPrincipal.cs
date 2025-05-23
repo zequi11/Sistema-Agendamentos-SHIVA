@@ -1,5 +1,4 @@
-﻿using SistemaDeAgendamentos;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace SistemaDeAgendementos
@@ -24,6 +23,14 @@ namespace SistemaDeAgendementos
         private void cadastrarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirOuAtivar<FormFiltrarClientes>();
+        }
+
+        private void cadastroProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Mantido igual, pois não é MDI child
+            CadastroProdutos cadastroProdutos = new CadastroProdutos();
+            cadastroProdutos.Show();
+            this.Hide();
         }
 
         private void cadastrarClientesToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -64,12 +71,6 @@ namespace SistemaDeAgendementos
         private void visualizarFichasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirOuAtivar<FormVerFichas>();
-        }
-
-        private void testeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirOuAtivar<TEst>();
-
         }
 
         private void AbrirOuAtivar<T>() where T : Form, new()
