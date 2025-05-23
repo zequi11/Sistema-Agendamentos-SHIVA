@@ -40,14 +40,14 @@
             fichasToolStripMenuItem = new ToolStripMenuItem();
             novaFichaToolStripMenuItem = new ToolStripMenuItem();
             visualizarFichasToolStripMenuItem = new ToolStripMenuItem();
+            cadastroProdutosToolStripMenuItem = new ToolStripMenuItem();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
-            testeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { agendamentosToolStripMenuItem, clientesToolStripMenuItem, fichasToolStripMenuItem, testeToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { agendamentosToolStripMenuItem, clientesToolStripMenuItem, fichasToolStripMenuItem, cadastroProdutosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -79,7 +79,7 @@
             // 
             alterarAgendamentoToolStripMenuItem.Name = "alterarAgendamentoToolStripMenuItem";
             alterarAgendamentoToolStripMenuItem.Size = new Size(207, 22);
-            alterarAgendamentoToolStripMenuItem.Text = "Editar Agendamento";
+            alterarAgendamentoToolStripMenuItem.Text = "Alterar Agendamento";
             alterarAgendamentoToolStripMenuItem.Click += alterarAgendamentoToolStripMenuItem_Click;
             // 
             // clientesToolStripMenuItem
@@ -107,7 +107,7 @@
             // 
             alterarClienteToolStripMenuItem.Name = "alterarClienteToolStripMenuItem";
             alterarClienteToolStripMenuItem.Size = new Size(169, 22);
-            alterarClienteToolStripMenuItem.Text = "Editar Cliente";
+            alterarClienteToolStripMenuItem.Text = "Alterar Cliente";
             alterarClienteToolStripMenuItem.Click += alterarClienteToolStripMenuItem_Click;
             // 
             // fichasToolStripMenuItem
@@ -120,28 +120,28 @@
             // novaFichaToolStripMenuItem
             // 
             novaFichaToolStripMenuItem.Name = "novaFichaToolStripMenuItem";
-            novaFichaToolStripMenuItem.Size = new Size(159, 22);
+            novaFichaToolStripMenuItem.Size = new Size(180, 22);
             novaFichaToolStripMenuItem.Text = "Nova Ficha";
             novaFichaToolStripMenuItem.Click += novaFichaToolStripMenuItem_Click;
             // 
             // visualizarFichasToolStripMenuItem
             // 
             visualizarFichasToolStripMenuItem.Name = "visualizarFichasToolStripMenuItem";
-            visualizarFichasToolStripMenuItem.Size = new Size(159, 22);
+            visualizarFichasToolStripMenuItem.Size = new Size(180, 22);
             visualizarFichasToolStripMenuItem.Text = "Visualizar Fichas";
             visualizarFichasToolStripMenuItem.Click += visualizarFichasToolStripMenuItem_Click;
+            // 
+            // cadastroProdutosToolStripMenuItem
+            // 
+            cadastroProdutosToolStripMenuItem.Name = "cadastroProdutosToolStripMenuItem";
+            cadastroProdutosToolStripMenuItem.Size = new Size(117, 20);
+            cadastroProdutosToolStripMenuItem.Text = "Cadastro Produtos";
+            cadastroProdutosToolStripMenuItem.Click += cadastroProdutosToolStripMenuItem_Click;
             // 
             // sqlCommand1
             // 
             sqlCommand1.CommandTimeout = 30;
             sqlCommand1.EnableOptimizedParameterBinding = false;
-            // 
-            // testeToolStripMenuItem
-            // 
-            testeToolStripMenuItem.Name = "testeToolStripMenuItem";
-            testeToolStripMenuItem.Size = new Size(46, 20);
-            testeToolStripMenuItem.Text = "Teste";
-            testeToolStripMenuItem.Click += testeToolStripMenuItem_Click;
             // 
             // FormPrincipal
             // 
@@ -175,7 +175,7 @@
         private ToolStripMenuItem fichasToolStripMenuItem;
         private ToolStripMenuItem novaFichaToolStripMenuItem;
         private ToolStripMenuItem visualizarFichasToolStripMenuItem;
+        private ToolStripMenuItem cadastroProdutosToolStripMenuItem;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
-        private ToolStripMenuItem testeToolStripMenuItem;
     }
 }
