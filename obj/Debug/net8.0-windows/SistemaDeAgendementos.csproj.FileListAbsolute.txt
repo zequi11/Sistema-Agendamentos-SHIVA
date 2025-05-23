@@ -124,7 +124,6 @@ C:\Users\cilei\SistemaDeAgendementos\bin\Debug\net8.0-windows\runtimes\win\lib\n
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.csproj.AssemblyReference.cache
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.CadastroCliente.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.CadastroFicha.resources
-C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.CadastroProdutos.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormEscolhaServico.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormFiltrarClientes.resources
 C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormLoginAdm.resources
@@ -303,3 +302,5 @@ C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\ne
 C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\SistemaDeAgendementos.genruntimeconfig.cache
 C:\Users\gabriella.lsilva15\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\ref\SistemaDeAgendementos.dll
 C:\Users\ezequiel.ecsantos\source\repos\Sistema-Agendamentos-SHIVA\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormVerFichas.resources
+C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendementos.FormVerFichas.resources
+C:\Users\cilei\SistemaDeAgendementos\obj\Debug\net8.0-windows\SistemaDeAgendamentos.TEst.resources

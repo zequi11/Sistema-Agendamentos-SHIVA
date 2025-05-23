@@ -21,6 +21,7 @@ namespace SistemaDeAgendementos
 
         private void FormEditarClientes_Load(object sender, EventArgs e)
         {
+
         }
 
         private void CarregarListas()
@@ -67,10 +68,9 @@ namespace SistemaDeAgendementos
                         txtCelular1.Text = reader["celular1_cliente"].ToString();
                         txtTelefone1.Text = reader["telefone1_cliente"].ToString();
 
-                        // Captura o status do cliente
                         statusCliente = reader["status_cliente"].ToString();
                         btnAtivarCliente.Enabled = statusCliente == "DESATIVADO";
-                        btnDeletarCliente.Enabled = statusCliente == "ATIVADO";
+                        btnDeletarCliente.Enabled = statusCliente == "ATIVO";
                     }
                     else
                     {
@@ -246,7 +246,7 @@ namespace SistemaDeAgendementos
 
         private void btnAtivarCliente_Click_1(object sender, EventArgs e)
         {
-            if (statusCliente == "ATIVADO")
+            if (statusCliente == "ATIVO")
             {
                 MessageBox.Show("Este cliente já está ativo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -258,7 +258,7 @@ namespace SistemaDeAgendementos
             {
                 using (SqlConnection conn = new SqlConnection(Conexao.stringConexao))
                 {
-                    string query = "UPDATE Cliente SET status_cliente = 'ATIVADO' WHERE cpf_cliente = @cpf";
+                    string query = "UPDATE Cliente SET status_cliente = 'ATIVO' WHERE cpf_cliente = @cpf";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -268,7 +268,7 @@ namespace SistemaDeAgendementos
                     }
 
                     MessageBox.Show("Cliente ativado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    statusCliente = "ATIVADO";
+                    statusCliente = "ATIVO";
                     btnAtivarCliente.Enabled = false;
                     btnDeletarCliente.Enabled = true;
                     Close();

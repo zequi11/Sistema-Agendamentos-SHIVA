@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             label14 = new Label();
             rdbFlexibilidadeBaixa = new RadioButton();
             label13 = new Label();
@@ -52,7 +51,6 @@
             label5 = new Label();
             label3 = new Label();
             label2 = new Label();
-            contextMenuStrip1 = new ContextMenuStrip(components);
             rdbFlexibilidadeMod = new RadioButton();
             label1 = new Label();
             rdbFlexibilidadeAlta = new RadioButton();
@@ -282,12 +280,6 @@
             label2.TabIndex = 50;
             label2.Text = "Possui alguma doença circulatória?\r\n";
             label2.UseCompatibleTextRendering = true;
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // rdbFlexibilidadeMod
             // 
@@ -677,7 +669,6 @@
         private Label label5;
         private Label label3;
         private Label label2;
-        private ContextMenuStrip contextMenuStrip1;
         private RadioButton rdbFlexibilidadeMod;
         private Label label1;
         private RadioButton rdbFlexibilidadeAlta;
